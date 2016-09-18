@@ -1,0 +1,278 @@
+body {
+    background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/SeaFoam_zpsaohswxho.jpg?1432456902533&1432456903321");
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.headerone {
+	text-align: left;
+}
+
+.aus {
+	position: absolute;
+	top: 0px;
+	left: 20px;
+
+	font-size: 65px; 
+	font-weight: 100px; 
+	color: white;
+	opacity: .4; 
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;
+}
+
+.tin {
+	position: absolute;
+	top: 55px;
+	left: 20px;
+
+	width: 100px;
+
+	font-size: 65px; 
+	font-weight: 100px; 
+	color: white; 
+	opacity: .4;
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: justify;
+}
+
+.go {
+	position: absolute;
+	top: 128px;
+	left: 20px;
+
+	font-size: 65px;  
+	font-weight: 100px;
+	color: white; 
+	opacity: .4;
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;	
+}
+
+.sch {
+	position: absolute;
+	top: 183px;
+	left: 23px;
+
+	font-size: 65px; 
+	font-weight: 100px;
+	color: white; 
+	opacity: .4;
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;	
+}
+
+.photography {
+	position: absolute;
+	top: 250px;
+	left: 27px;
+
+	font-size: 22px; 
+	font-weight: 100px;
+	color: white; 
+	opacity: .4;
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;	
+}
+
+.line {
+	position: absolute;
+	top: 135px;
+	left: 20px;
+	height: 3.5px;
+	width: 137px;
+	background-color: white;
+	opacity: .4;
+}
+
+.navigation1 {
+	position: absolute;
+	top: 15px;
+	left: 172px;
+
+	font-size: 15px;  
+	color: white; 
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;
+}
+
+.navigation2 {
+	position: absolute;
+	top: 30px;
+	left: 172px;
+
+	font-size: 15px;  
+	color: white; 
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;
+}
+
+.navigation3 {
+	position: absolute;
+	top: 45px;
+	left: 172px;
+
+	font-size: 15px;  
+	color: white; 
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;
+}
+
+.navigation4 {
+	position: absolute;
+	top: 60px;
+	left: 172px;
+
+	font-size: 15px;  
+	color: white; 
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;
+}
+
+.navigation5 {
+	position: absolute;
+	top: 75px;
+	left: 172px;
+
+	font-size: 15px;  
+	color: white; 
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;
+}
+
+.navigation1:hover, .navigation2:hover, .navigation3:hover, .navigation4:hover, .navigation5:hover {
+	color: black;
+}
+
+#header1 {
+	position: absolute;
+	top: 95px;
+	left: 263px;
+
+	font-size: 32px;
+	font-family: Open Sans;
+	text-align: left;
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#articleline {
+	position: absolute;
+	top: 156px;
+	left: 250px;
+	height: 2px;
+	width: 640px;
+
+	background-color: white;
+}
+
+#articlebox {
+	position: absolute;
+	top: 165px;
+	left: 250px;
+	height: 430px;
+	width: 640px;
+
+	background-color: gray;
+	opacity: .5;
+}
+
+#paragraph1 {
+	position: absolute;
+	top: 175px;
+	left: 265px;
+	width: 615px;
+
+	font-size: 20px;
+	font-family: Open Sans;
+	text-align: left;
+	color: white;
+	font-weight: bold;
+}
+
+#paragraph2 {
+	position: absolute;
+	top: 210px;
+	left: 265px;
+	height: 200px;
+	width: 615px;
+
+	font-size: 20px;
+	font-family: Open Sans;
+	text-align: left;
+	color: white;
+	font-weight: bold;
+}
+
+#paragraph3 {
+	position: absolute;
+	top: 437px;
+	left: 265px;
+	height: 150px;
+	width: 615px;
+
+	font-size: 20px;
+	font-family: Open Sans;
+	text-align: left;
+	color: white;
+	font-weight: bold;
+}
+
+#box1 {
+	position: absolute;
+	top: 165px;
+	left: 935px;
+	width: 300px; 
+	height: 300px; 
+	background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/Joeys%20Pictue%20of%20Me_zpswmuac15a.jpg");
+	background-size: cover;
+}
+
+#connection1 {
+	position: fixed;
+	top: 575px;
+	left: 20px;
+	width: 25px;
+	height: 25px;
+}
+
+#connection2 {
+	position: fixed;
+	top: 575px;
+	left: 55px;
+	width: 25px;
+	height: 25px;
+}
+
+#connection3 {
+	position: fixed;
+	top: 575px;
+	left: 90px;
+	width: 25px;
+	height: 25px;
+}
+
+#connection4 {
+	position: fixed;
+	top: 575px;
+	left: 125px;
+	width: 25px;
+	height: 25px;
+}
+
+#connection1:hover, #connection2:hover, #connection3:hover, #connection4:hover {
+	opacity: .1;
+}
