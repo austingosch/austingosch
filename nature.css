@@ -1,0 +1,236 @@
+body {
+	background-color: white;
+}
+
+.headerone {
+	text-align: left;
+}
+
+.aus {
+	position: fixed;
+	top: 0px;
+	left: 20px;
+
+	font-size: 65px; 
+	font-weight: 100px; 
+	color: black;
+	opacity: .4; 
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;
+}
+
+.tin {
+	position: fixed;
+	top: 55px;
+	left: 20px;
+
+	width: 100px;
+
+	font-size: 65px; 
+	font-weight: 100px; 
+	color: black; 
+	opacity: .4;
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: justify;
+}
+
+.go {
+	position: fixed;
+	top: 128px;
+	left: 20px;
+
+	font-size: 65px;  
+	font-weight: 100px;
+	color: black; 
+	opacity: .4;
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;	
+}
+
+.sch {
+	position: fixed;
+	top: 183px;
+	left: 23px;
+
+	font-size: 65px; 
+	font-weight: 100px;
+	color: black; 
+	opacity: .4;
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;	
+}
+
+.photography {
+	position: fixed;
+	top: 250px;
+	left: 27px;
+
+	font-size: 22px; 
+	font-weight: 100px;
+	color: black; 
+	opacity: .4;
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;	
+}
+
+.line {
+	position: fixed;
+	top: 135px;
+	left: 20px;
+	height: 3.5px;
+	width: 137px;
+	background-color: black;
+	opacity: .4;
+}
+
+.navigation1 {
+	position: absolute;
+	top: 15px;
+	left: 172px;
+
+	font-size: 15px;  
+	color: black; 
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;
+}
+
+.navigation2 {
+	position: absolute;
+	top: 30px;
+	left: 172px;
+
+	font-size: 15px;  
+	color: black; 
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;
+}
+
+.navigation3 {
+	position: absolute;
+	top: 45px;
+	left: 172px;
+
+	font-size: 15px;  
+	color: black; 
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;
+}
+
+.navigation4 {
+	position: absolute;
+	top: 60px;
+	left: 172px;
+
+	font-size: 15px;  
+	color: black; 
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;
+}
+
+.navigation5 {
+	position: absolute;
+	top: 75px;
+	left: 172px;
+
+	font-size: 15px;  
+	color: black; 
+	font-family: Open Sans;
+	text-decoration: none;
+	text-align: left;
+}
+
+.navigation1:hover, .navigation2:hover, .navigation3:hover, .navigation4:hover, .navigation5:hover {
+	color: gray;
+	opacity: .75;
+}
+
+#photos {
+	position: absolute;
+	top: 120px;
+	left: 172px;
+	width: 928.5px;
+
+	text-align: center;
+}
+
+#toparrow {
+	position: fixed;
+	top: 500px;
+	left: 72px;
+	width: 35px;
+	height: 50px;
+}
+
+#toparrow:hover {
+	opacity: .3;
+}
+
+#connection1 {
+	position: fixed;
+	top: 575px;
+	left: 20px;
+	width: 25px;
+	height: 25px;
+}
+
+#connection2 {
+	position: fixed;
+	top: 575px;
+	left: 55px;
+	width: 25px;
+	height: 25px;
+}
+
+#connection3 {
+	position: fixed;
+	top: 575px;
+	left: 90px;
+	width: 25px;
+	height: 25px;
+}
+
+#connection4 {
+	position: fixed;
+	top: 575px;
+	left: 125px;
+	width: 25px;
+	height: 25px;
+}
+
+#connection1:hover, #connection2:hover, #connection3:hover, #connection4:hover {
+	opacity: .2;
+}
+
+.sidebar {
+	position: fixed;
+	top: 0px;
+	left: 1140px;
+	height: 619px;
+	width: 85px;
+
+	background-color: gray;
+	opacity: .4;
+}
+
+#sidebar {
+	position: fixed;
+	top: 0px;
+	left: 1148px;
+	height: 619px;
+	width: 70px;
+
+	text-align: center;
+}
+
+#sphoto1:hover, #sphoto2:hover, #sphoto3:hover, #sphoto4:hover, #sphoto5:hover, #sphoto6:hover, #sphoto7:hover, #sphoto8:hover, #sphoto9:hover, #sphoto10:hover, #sphoto11:hover, #sphoto12:hover, #sphoto13:hover, #sphoto14:hover, #sphoto15:hover, #sphoto16:hover, #sphoto17:hover {
+	opacity: .4;
+}
