@@ -128,30 +128,6 @@ body {
 	text-align: left;
 }
 
-.navigation4 {
-	position: absolute;
-	top: 60px;
-	left: 172px;
-
-	font-size: 15px;  
-	color: white; 
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;
-}
-
-.navigation5 {
-	position: absolute;
-	top: 75px;
-	left: 172px;
-
-	font-size: 15px;  
-	color: white; 
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;
-}
-
 .navigation1:hover, .navigation2:hover, .navigation3:hover, .navigation4:hover, .navigation5:hover {
 	color: black;
 }
