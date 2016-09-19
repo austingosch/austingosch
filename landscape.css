@@ -230,3 +230,14 @@ body {
 
 	text-align: center;
 }
+
+#backrect {
+	position: absolute;
+	top: 120px;
+	left: 172px;
+	width: 928.5px;
+	height: 6551.82px;
+
+	background-color: gray;
+	opacity: .4;
+}
