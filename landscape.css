@@ -244,4 +244,6 @@ body {
 	text-align: center;
 }
 
-
+#sphoto1:hover, #sphoto2:hover, #sphoto3:hover, #sphoto4:hover, #sphoto5:hover, #sphoto6:hover, #sphoto7:hover, #sphoto8:hover, #sphoto9:hover, #sphoto10:hover, #sphoto11:hover, #sphoto12:hover, #sphoto13:hover, #sphoto14:hover, #sphoto15:hover, #sphoto16:hover, #sphoto17:hover {
+	opacity: .4;
+}
