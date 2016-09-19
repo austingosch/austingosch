@@ -172,6 +172,7 @@ body {
 	width: 928.5px;
 
 	text-align: center;
+	z-index: 2;
 }
 
 #toparrow {
