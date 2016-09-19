@@ -153,6 +153,18 @@ body {
 	opacity: .75;
 }
 
+#backrect {
+	position: absolute;
+	top: 120px;
+	left: 172px;
+	width: 928.5px;
+	height: 1857px;
+
+	background-color: gray;
+	opacity: .2;
+	z-index: 1;
+}
+
 #photos {
 	position: absolute;
 	top: 120px;
@@ -160,6 +172,7 @@ body {
 	width: 928.5px;
 
 	text-align: center;
+	z-index: 2;
 }
 
 #toparrow {
