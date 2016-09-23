@@ -136,18 +136,6 @@ body {
 	text-align: left;
 }
 
-.navigation5 {
-	position: absolute;
-	top: 75px;
-	left: 172px;
-
-	font-size: 15px;  
-	color: black; 
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;
-}
-
 .navigation1:hover, .navigation2:hover, .navigation3:hover, .navigation4:hover, .navigation5:hover {
 	color: gray;
 	opacity: .75;
@@ -155,7 +143,7 @@ body {
 
 #backrect {
 	position: absolute;
-	top: 120px;
+	top: 100px;
 	left: 172px;
 	width: 928.5px;
 	height: 1857px;
@@ -167,7 +155,7 @@ body {
 
 #photos {
 	position: absolute;
-	top: 120px;
+	top: 100px;
 	left: 172px;
 	width: 928.5px;
 
@@ -236,7 +224,7 @@ body {
 
 #sidebar {
 	position: fixed;
-	top: 0px;
+	top: 200px;
 	left: 1148px;
 	height: 619px;
 	width: 70px;
@@ -244,6 +232,6 @@ body {
 	text-align: center;
 }
 
-#sphoto1:hover, #sphoto2:hover, #sphoto3:hover, #sphoto4:hover, #sphoto5:hover, #sphoto6:hover, #sphoto7:hover, #sphoto8:hover, #sphoto9:hover, #sphoto10:hover, #sphoto11:hover, #sphoto12:hover, #sphoto13:hover, #sphoto14:hover, #sphoto15:hover, #sphoto16:hover, #sphoto17:hover {
+#sphoto1:hover, #sphoto2:hover, #sphoto3:hover, #sphoto4:hover{
 	opacity: .4;
 }
