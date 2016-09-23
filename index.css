@@ -97,7 +97,7 @@ body {
 	top: 15px;
 	left: 172px;
 
-	font-size: 15px;  
+	font-size: 20px;  
 	color: white; 
 	font-family: Open Sans;
 	text-decoration: none;
@@ -106,10 +106,10 @@ body {
 
 .navigation2 {
 	position: absolute;
-	top: 30px;
+	top: 35px;
 	left: 172px;
 
-	font-size: 15px;  
+	font-size: 20px;  
 	color: white; 
 	font-family: Open Sans;
 	text-decoration: none;
@@ -118,10 +118,10 @@ body {
 
 .navigation3 {
 	position: absolute;
-	top: 45px;
+	top: 55px;
 	left: 172px;
 
-	font-size: 15px;  
+	font-size: 20px;  
 	color: white; 
 	font-family: Open Sans;
 	text-decoration: none;
