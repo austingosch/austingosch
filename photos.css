@@ -97,7 +97,7 @@ body {
 	top: 15px;
 	left: 172px;
 
-	font-size: 15px;  
+	font-size: 20px;  
 	color: white; 
 	font-family: Open Sans;
 	text-decoration: none;
@@ -106,10 +106,10 @@ body {
 
 .navigation2 {
 	position: absolute;
-	top: 30px;
+	top: 35px;
 	left: 172px;
 
-	font-size: 15px;  
+	font-size: 20px;  
 	color: white; 
 	font-family: Open Sans;
 	text-decoration: none;
@@ -118,10 +118,10 @@ body {
 
 .navigation3 {
 	position: absolute;
-	top: 45px;
+	top: 55px;
 	left: 172px;
 
-	font-size: 15px;  
+	font-size: 20px;  
 	color: white; 
 	font-family: Open Sans;
 	text-decoration: none;
@@ -176,7 +176,7 @@ body {
 
 #textone {
 	position: absolute;
-	top: 255px;
+	top: 253px;
 	left: 415px;
 
 	font-family: Open Sans;
@@ -190,8 +190,8 @@ body {
 	position: absolute;
 	top: 250px;
 	left: 400px;
-	width: 250px;
-	height: 50px;
+	width: 220px;
+	height: 40px;
 
 	background-color: gray;
 	opacity: .5;
@@ -202,13 +202,13 @@ body {
 #gridtwo {
 	position: absolute;
 	top: 75px;
-	left: 650px;
+	left: 670px;
 }
 
 #texttwo {
 	position: absolute;
-	top: 255px;
-	left: 665px;
+	top: 253px;
+	left: 685px;
 
 	font-family: Open Sans;
 	font-size: 25px;
@@ -220,9 +220,9 @@ body {
 #textboxtwo {
 	position: absolute;
 	top: 250px;
-	left: 650px;
-	width: 250px;
-	height: 50px;
+	left: 670px;
+	width: 220px;
+	height: 40px;
 
 	background-color: gray;
 	opacity: .6;
@@ -238,7 +238,7 @@ body {
 
 #textthree {
 	position: absolute;
-	top: 510px;
+	top: 503px;
 	left: 415px;
 
 	font-family: Open Sans;
@@ -250,10 +250,10 @@ body {
 
 #textboxthree {
 	position: absolute;
-	top: 505px;
+	top: 500px;
 	left: 400px;
-	width: 250px;
-	height: 50px;
+	width: 220px;
+	height: 40px;
 
 	background-color: gray;
 	opacity: .6;
@@ -264,13 +264,13 @@ body {
 #gridfour {
 	position: absolute;
 	top: 325px;
-	left: 650px;
+	left: 670px;
 }
 
 #textfour {
 	position: absolute;
-	top: 510px;
-	left: 665px;
+	top: 503px;
+	left: 685px;
 
 	font-family: Open Sans;
 	font-size: 25px;
@@ -281,10 +281,10 @@ body {
 
 #textboxfour {
 	position: absolute;
-	top: 505px;
-	left: 650px;
-	width: 250px;
-	height: 50px;
+	top: 500px;
+	left: 670px;
+	width: 220px;
+	height: 40px;
 
 	background-color: gray;
 	opacity: .6;
