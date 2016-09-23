@@ -136,18 +136,6 @@ body {
 	text-align: left;
 }
 
-.navigation5 {
-	position: absolute;
-	top: 75px;
-	left: 172px;
-
-	font-size: 15px;  
-	color: black; 
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;
-}
-
 .navigation1:hover, .navigation2:hover, .navigation3:hover, .navigation4:hover, .navigation5:hover {
 	color: gray;
 	opacity: .75;
@@ -155,10 +143,10 @@ body {
 
 #backrect {
 	position: absolute;
-	top: 120px;
+	top: 100px;
 	left: 172px;
 	width: 928.5px;
-	height: 6594.82px;
+	height: 8446.5px;
 
 	background-color: gray;
 	opacity: .2;
@@ -167,7 +155,7 @@ body {
 
 #photos {
 	position: absolute;
-	top: 120px;
+	top: 100px;
 	left: 172px;
 	width: 928.5px;
 
@@ -236,7 +224,7 @@ body {
 
 #sidebar {
 	position: fixed;
-	top: 115px;
+	top: 55px;
 	left: 1148px;
 	height: 619px;
 	width: 70px;
