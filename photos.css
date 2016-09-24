@@ -295,3 +295,7 @@ body {
 #textboxone:hover, #textboxtwo:hover, #textboxthree:hover, #textboxfour:hover {
 	opacity: 1;
 }
+
+#gridone:hover, #gridtwo:hover, #gridthree:hover, #gridfour:hover {
+	opacity: .6;
+}
