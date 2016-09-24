@@ -97,7 +97,7 @@ body {
 	top: 15px;
 	left: 172px;
 
-	font-size: 15px;  
+	font-size: 20px;  
 	color: white; 
 	font-family: Open Sans;
 	text-decoration: none;
@@ -106,10 +106,10 @@ body {
 
 .navigation2 {
 	position: absolute;
-	top: 30px;
+	top: 35px;
 	left: 172px;
 
-	font-size: 15px;  
+	font-size: 20px;  
 	color: white; 
 	font-family: Open Sans;
 	text-decoration: none;
@@ -118,10 +118,10 @@ body {
 
 .navigation3 {
 	position: absolute;
-	top: 45px;
+	top: 55px;
 	left: 172px;
 
-	font-size: 15px;  
+	font-size: 20px;  
 	color: white; 
 	font-family: Open Sans;
 	text-decoration: none;
@@ -134,7 +134,7 @@ body {
 
 #header1 {
 	position: absolute;
-	top: 95px;
+	top: 65px;
 	left: 263px;
 
 	font-size: 32px;
@@ -147,7 +147,7 @@ body {
 
 #articleline {
 	position: absolute;
-	top: 156px;
+	top: 123px;
 	left: 250px;
 	height: 2px;
 	width: 640px;
@@ -157,18 +157,18 @@ body {
 
 #articlebox {
 	position: absolute;
-	top: 165px;
+	top: 130px;
 	left: 250px;
-	height: 430px;
+	height: 450px;
 	width: 640px;
 
 	background-color: gray;
-	opacity: .5;
+	opacity: .8;
 }
 
 #paragraph1 {
 	position: absolute;
-	top: 175px;
+	top: 140px;
 	left: 265px;
 	width: 615px;
 
@@ -181,7 +181,7 @@ body {
 
 #paragraph2 {
 	position: absolute;
-	top: 210px;
+	top: 175px;
 	left: 265px;
 	height: 200px;
 	width: 615px;
@@ -195,7 +195,21 @@ body {
 
 #paragraph3 {
 	position: absolute;
-	top: 437px;
+	top: 402px;
+	left: 265px;
+	height: 150px;
+	width: 615px;
+
+	font-size: 20px;
+	font-family: Open Sans;
+	text-align: left;
+	color: white;
+	font-weight: bold;
+}
+
+#paragraph4 {
+	position: absolute;
+	top: 520px;
 	left: 265px;
 	height: 150px;
 	width: 615px;
