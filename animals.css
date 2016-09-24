@@ -224,7 +224,7 @@ body {
 
 #sidebar {
 	position: fixed;
-	top: 200px;
+	top: 215px;
 	left: 1148px;
 	height: 619px;
 	width: 70px;
@@ -232,6 +232,6 @@ body {
 	text-align: center;
 }
 
-#sphoto1:hover, #sphoto2:hover, #sphoto3:hover, #sphoto4:hover{
+#sphoto1:hover, #sphoto2:hover, #sphoto3:hover, #sphoto4:hover, #sphoto5:hover {
 	opacity: .4;
 }
