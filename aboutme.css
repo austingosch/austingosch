@@ -1,13 +1,13 @@
 body {
-    background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/SeaFoam_zpsaohswxho.jpg?1432456902533&1432456903321");
-    -webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+    background-color: white;
 }
 
 .headerone {
 	text-align: left;
+	transform: scale(.9);
+	position: absolute;
+	top: -15px;
+	left: 5px;
 }
 
 .aus {
@@ -15,12 +15,9 @@ body {
 	top: 0px;
 	left: 20px;
 
-	font-size: 65px; 
-	font-weight: 100px; 
-	color: white;
-	opacity: .4; 
-	font-family: Open Sans;
-	text-decoration: none;
+	font-size: 65px;  
+	color: #a8a8a8;
+	font-family: Indie Flower;
 	text-align: left;
 }
 
@@ -32,11 +29,8 @@ body {
 	width: 100px;
 
 	font-size: 65px; 
-	font-weight: 100px; 
-	color: white; 
-	opacity: .4;
-	font-family: Open Sans;
-	text-decoration: none;
+	color: #a8a8a8; 
+	font-family: Indie Flower;
 	text-align: justify;
 }
 
@@ -46,11 +40,8 @@ body {
 	left: 20px;
 
 	font-size: 65px;  
-	font-weight: 100px;
-	color: white; 
-	opacity: .4;
-	font-family: Open Sans;
-	text-decoration: none;
+	color: #a8a8a8; 
+	font-family: Indie Flower;
 	text-align: left;	
 }
 
@@ -60,25 +51,8 @@ body {
 	left: 23px;
 
 	font-size: 65px; 
-	font-weight: 100px;
-	color: white; 
-	opacity: .4;
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;	
-}
-
-.photography {
-	position: absolute;
-	top: 250px;
-	left: 27px;
-
-	font-size: 22px; 
-	font-weight: 100px;
-	color: white; 
-	opacity: .4;
-	font-family: Open Sans;
-	text-decoration: none;
+	color: #a8a8a8; 
+	font-family: Indie Flower;
 	text-align: left;	
 }
 
@@ -86,150 +60,798 @@ body {
 	position: absolute;
 	top: 135px;
 	left: 20px;
-	height: 3.5px;
+	height: 5px;
 	width: 137px;
-	background-color: white;
-	opacity: .4;
+	background-color: #a8a8a8;
+
+	border-radius: 25px;
 }
 
-.navigation1 {
-	position: absolute;
-	top: 15px;
-	left: 172px;
 
-	font-size: 20px;  
-	color: white; 
-	font-family: Open Sans;
-	text-decoration: none;
+.text {
+	font-size: 45px; 
+	color: black; 
+	font-family: Indie Flower;
+}
+
+#hellotext {
+	position: absolute;
+	top: 210px;
+	left: 532px;	
+	text-align: left;
+
+	font-size: 60px;
+}
+
+#introtext {
+	position: absolute;
+	top: 272px;
+	left: 535px;	
+	text-align: left;
+}
+	
+	#sidetext5 {
+		font-size: 20px; 
+		color: black; 
+		font-family: Indie Flower;	
+
+		position: absolute;
+		top: 465px;
+		left: 410px;
+		width: 275px;
+		text-align: left;
+		color: black;
+		opacity: .65;
+
+		z-index: 1;
+	}
+
+#text1 {
+	position: absolute;
+	top: 800px;
+	left: 650px;
+	width: 515px;
 	text-align: left;
 }
 
-.navigation2 {
+#text2 {
 	position: absolute;
-	top: 35px;
-	left: 172px;
+	top: 1355px;
+	left: 150px;
+	width: 515px;
+	text-align: justify;
+}
 
-	font-size: 20px;  
-	color: white; 
-	font-family: Open Sans;
-	text-decoration: none;
+#text3 {
+	position: absolute;
+	top: 2010px;
+	left: 660px;
+	width: 600px;
 	text-align: left;
 }
 
-.navigation3 {
-	position: absolute;
-	top: 55px;
-	left: 172px;
+	#sidetext1 {
+		font-size: 25px; 
+		color: black; 
+		font-family: Indie Flower;	
 
-	font-size: 20px;  
-	color: white; 
-	font-family: Open Sans;
-	text-decoration: none;
+		position: absolute;
+		top: 2260px;
+		left: 210px;
+		width: 300px;
+		text-align: left;
+
+		transform: rotate(-5deg);
+		z-index: 1;
+	}
+
+	#sidetext2 {
+		font-size: 15px; 
+		color: black; 
+		font-family: Indie Flower;	
+
+		position: absolute;
+		top: 2145px;
+		left: 53px;
+		width: 300px;
+		text-align: left;
+
+		transform: rotate(4deg);
+		z-index: 1;
+	}
+
+	#sidetext3 {
+		font-size: 12px; 
+		color: black; 
+		font-family: Indie Flower;	
+
+		position: absolute;
+		top: 2121px;
+		left: 452px;
+		width: 300px;
+		text-align: left;
+
+		transform: rotate(-12deg);
+		z-index: 1;
+	}
+
+#text4 {
+	position: absolute;
+	top: 2605px;
+	left: 100px;
+	width: 600px;
 	text-align: left;
 }
 
-.navigation1:hover, .navigation2:hover, .navigation3:hover, .navigation4:hover, .navigation5:hover {
-	color: black;
-}
+	#sidetext4 {
+		font-size: 25px; 
+		color: black; 
+		font-family: Indie Flower;	
 
-#header1 {
+		position: absolute;
+		top: 2859px;
+		left: 912px;
+		width: 300px;
+		text-align: left;
+
+		transform: rotate(5deg);
+		z-index: 1;
+	}
+
+#text5 {
 	position: absolute;
-	top: 65px;
-	left: 263px;
-
-	font-size: 32px;
-	font-family: Open Sans;
-	text-align: left;
-	color: white;
-	font-style: italic;
-	font-weight: bold;
-}
-
-#articleline {
-	position: absolute;
-	top: 123px;
-	left: 250px;
-	height: 2px;
-	width: 640px;
-
-	background-color: white;
-}
-
-#articlebox {
-	position: absolute;
-	top: 130px;
-	left: 250px;
-	height: 450px;
-	width: 640px;
-
-	background-color: gray;
-	opacity: .8;
-}
-
-#paragraph1 {
-	position: absolute;
-	top: 140px;
-	left: 265px;
+	top: 3168px;
+	left: 615px;
 	width: 615px;
-
-	font-size: 20px;
-	font-family: Open Sans;
 	text-align: left;
-	color: white;
-	font-weight: bold;
 }
 
-#paragraph2 {
+#text6 {
 	position: absolute;
-	top: 175px;
-	left: 265px;
-	height: 200px;
-	width: 615px;
-
-	font-size: 20px;
-	font-family: Open Sans;
+	top: 3940px;
+	left: 35px;
+	width: 900px;
 	text-align: left;
-	color: white;
-	font-weight: bold;
+
+	font-size: 40px;
 }
 
-#paragraph3 {
+#text7 {
 	position: absolute;
-	top: 402px;
-	left: 265px;
-	height: 150px;
-	width: 615px;
-
-	font-size: 20px;
-	font-family: Open Sans;
+	top: 4315px;
+	left: 350px;
+	width: 900px;
 	text-align: left;
-	color: white;
-	font-weight: bold;
+
+	font-size: 40px;
 }
 
-#paragraph4 {
+#text8 {
 	position: absolute;
-	top: 520px;
-	left: 265px;
-	height: 150px;
-	width: 615px;
-
-	font-size: 20px;
-	font-family: Open Sans;
+	top: 4715px;
+	left: 100px;
+	width: 1100px;
 	text-align: left;
-	color: white;
-	font-weight: bold;
+
+	font-size: 40px;
 }
 
-#box1 {
+
+#introbackbox {
 	position: absolute;
-	top: 165px;
-	left: 935px;
+	top: 125px;
+	left: 855px;
+	width: 320px; 
+	height: 365px; 
+	background-color: white;	
+
+	box-shadow: 0 0 30px #a8a8a8;
+
+	transform: rotate(5deg);
+}
+
+#introbox {
+	position: absolute;
+	top: 135px;
+	left: 867px;
 	width: 300px; 
 	height: 300px; 
 	background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/Joeys%20Pictue%20of%20Me_zpswmuac15a.jpg");
 	background-size: cover;
+
+	transform: rotate(5deg);
 }
+
+#backbox8 {
+	position: absolute;
+	top: 252px;
+	left: 155px;
+	width: 215px; 
+	height: 290px; 
+	background-color: white;	
+
+	box-shadow: 0 0 30px #a8a8a8;
+
+	transform: rotate(-6.5deg);
+}
+
+	#playlist {
+		position: absolute;
+		top: 240px;
+		left: 146px;
+		width: 230px;
+		height: 280px;
+
+		transform: scale(.85) rotate(-6.5deg);
+		z-index: 1;
+	}
+
+	#followbutton {
+		position: absolute;
+		top: 508px;
+		left: 163px;
+
+		transform: scale(.85) rotate(-6.5deg);
+		z-index: 1;
+	}
+
+	#sideimage35 {
+		position: absolute;
+		top: 392px;
+		left: 395px;
+		width: 70px;
+		height: 70px;
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/Untitled-11_zpsvhrwlt7z.jpg");
+		background-size: cover;
+
+		transform: rotate(-122deg);
+		opacity: .75;
+	}
+
+#backbox1 {
+	position: absolute;
+	top: 740px;
+	left: 155px;
+	width: 320px; 
+	height: 365px; 
+	background-color: white;	
+
+	box-shadow: 0 0 30px #a8a8a8;
+
+	transform: rotate(-5deg);
+}
+
+#box1 {
+	position: absolute;
+	top: 750px;
+	left: 162px;
+	width: 300px; 
+	height: 300px; 
+	background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/Untitled-1_zps8fyvubtd.jpg");
+	background-size: cover;
+
+	border: 1px solid black;
+	transform: rotate(-5deg);
+}
+
+#backbox2 {
+	position: absolute;
+	top: 1285px;
+	left: 820px;
+	width: 320px; 
+	height: 365px; 
+	background-color: white;	
+
+	box-shadow: 0 0 30px #a8a8a8;
+
+	transform: rotate(5deg);
+}
+
+#box2 {
+	position: absolute;
+	top: 1295px;
+	left: 832px;
+	width: 300px; 
+	height: 300px; 
+	background-size: cover;
+
+	transform: rotate(5deg);
+}
+
+	#sideimage1 {
+		position: absolute;
+		top: 1605px;
+		left: 1010px;
+		width: 121px; 
+		height: 95px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/download%201_zpsto70cwk0.jpg");
+		background-size: cover;
+
+		transform: rotate(-8deg);
+		z-index: 1;
+	}
+
+#backbox3 {
+	position: absolute;
+	top: 1870px;
+	left: 160px;
+	width: 320px; 
+	height: 365px; 
+	background-color: white;	
+
+	box-shadow: 0 0 30px #a8a8a8;
+
+	transform: rotate(-5deg);
+}
+
+#box3 {
+	position: absolute;
+	top: 1880px;
+	left: 169px;
+	width: 300px; 
+	height: 300px; 
+	background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/20161021_175943_zps3qymbscp.png");
+	background-size: cover;
+
+	transform: rotate(-5deg);
+}
+
+#backbox4 {
+	position: absolute;
+	top: 1900px;
+	left: 50px;
+	width: 160px; 
+	height: 193px; 
+	background-color: white;	
+
+	box-shadow: 0 0 30px #a8a8a8;
+
+	transform: rotate(4deg);
+}
+
+#box4 {
+	position: absolute;
+	top: 1955px;
+	left: 56px;
+	width: 150px; 
+	height: 150px; 
+	background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/Angels%20Landing%20copy_zpsab8yzv9n.jpg");
+	background-size: cover;
+
+	transform: rotate(4deg);
+}
+
+#backbox5 {
+	position: absolute;
+	top: 2025px;
+	left: 439px;
+	width: 119px; 
+	height: 135px; 
+	background-color: white;	
+
+	box-shadow: 0 0 30px #a8a8a8;
+
+	transform: rotate(-12deg);
+}
+
+#box5 {
+	position: absolute;
+	top: 2032px;
+	left: 442px;
+	width: 111px; 
+	height: 111px; 
+	background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/Austin%20Gosch%20-%20Land%20-%20Fiordlands%20copy_zpslq284c82.jpg");
+	background-size: cover;
+
+	transform: rotate(-12deg);
+}
+
+	#sideimage2 {
+		position: absolute;
+		top: 2230px;
+		left: -5px;
+		width: 577px; 
+		height: 100px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/Untitled-3_zps7pp8svch.jpg");
+		background-size: cover;
+	}
+
+	#sideimage3 {
+		position: absolute;
+		top: 2210px;
+		left: 515px;
+		width: 50px; 
+		height: 50px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/Untitled-6_zpsx4ei9jp4.jpg");
+		background-size: cover;
+	}
+
+#backbox6 {
+	position: absolute;
+	top: 2530px;
+	left: 855px;
+	width: 320px; 
+	height: 365px; 
+	background-color: white;	
+
+	box-shadow: 0 0 30px #a8a8a8;
+
+	transform: rotate(5deg);
+}
+
+#box6 {
+	position: absolute;
+	top: 2540px;
+	left: 867px;
+	width: 300px; 
+	height: 300px; 
+	background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/01_MG_1961_zps7bdcxtnx.jpg");
+	background-size: cover;
+
+	transform: rotate(5deg);
+}
+
+	#sideimage4 {
+		position: absolute;
+		top: 2828px;
+		left: 850px;
+		width: 50px; 
+		height: 50px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/download%204_zpslkyiaz3b.jpg");
+		background-size: cover;
+		transform: rotate(5deg);
+		z-index: 1;
+	}
+
+	#sideimage5 {
+		position: absolute;
+		top: 2850px;
+		left: 1100px;
+		width: 50px; 
+		height: 50px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/download%204_zpslkyiaz3b.jpg");
+		background-size: cover;
+		transform: rotate(5deg);
+		z-index: 1;
+	}
+
+	#sideimage6 {
+		position: absolute;
+		top: 2680px;
+		left: 610px;
+		width: 150px; 
+		height: 150px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/Untitled-4_zpsdxq9i3n8.jpg");
+		background-size: cover;
+		transform: rotate(-12deg);
+		z-index: 1;
+	}
+
+#backbox7 {
+	position: absolute;
+	top: 3085px;
+	left: 80px;
+	width: 320px; 
+	height: 365px; 
+	background-color: white;	
+
+	box-shadow: 0 0 30px #a8a8a8;
+
+	transform: rotate(-5deg);
+}
+
+#box7 {
+	position: absolute;
+	top: 3095px;
+	left: 88px;
+	width: 300px; 
+	height: 300px; 
+	background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/source-code-583537_960_720_zpsutexjkgp.jpg");
+	background-size: cover;
+
+	transform: rotate(-5deg);
+}
+
+	.comp {
+		position: absolute;
+		top: 365px;
+		left: -25px;
+	}
+
+	#sideimage7 {
+		position: absolute;
+		top: 2885px;
+		left: 475px;
+		width: 125px; 
+		height: 125px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/download%205_zpsgul5esmy.jpg");
+		background-size: cover;
+	}
+
+	#sideimage8 {
+		position: absolute;
+		top: 2800px;
+		left: 570px;
+		width: 50px; 
+		height: 50px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		transform: rotate(8deg);
+		z-index: 1;
+	}
+
+	#sideimage9 {
+		position: absolute;
+		top: 2840px;
+		left: 460px;
+		width: 25px; 
+		height: 25px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		transform: rotate(-3deg);
+		z-index: 1;	
+	}
+
+	#sideimage10 {
+		position: absolute;
+		top: 2770px;
+		left: 500px;
+		width: 38px; 
+		height: 38px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		transform: rotate(-15deg);
+		z-index: 1;	
+	}
+
+	#sideimage11 {
+		position: absolute;
+		top: 2735px;
+		left: 735px;
+		width: 40px; 
+		height: 40px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		transform: rotate(-15deg);
+		z-index: 1;	
+	}
+
+	#sideimage12 {
+		position: absolute;
+		top: 2715px;
+		left: 575px;
+		width: 30px; 
+		height: 30px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		transform: rotate(20deg);
+		z-index: 1;	
+	}
+
+	#sideimage13 {
+		position: absolute;
+		top: 2725px;
+		left: 650px;
+		width: 45px; 
+		height: 45px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		z-index: 1;	
+	}
+
+	#sideimage14 {
+		position: absolute;
+		top: 2790px;
+		left: 700px;
+		width: 20px; 
+		height: 20px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		z-index: 1;	
+	}
+
+	#sideimage15 {
+		position: absolute;
+		top: 2852px;
+		left: 815px;
+		width: 21px; 
+		height: 21px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		transform: rotate(10deg);
+		z-index: 1;	
+	}
+
+	#sideimage16 {
+		position: absolute;
+		top: 2865px;
+		left: 915px;
+		width: 15px; 
+		height: 15px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		transform: rotate(-12deg);
+		z-index: 1;	
+	}
+
+	#sideimage17 {
+		position: absolute;
+		top: 2932px;
+		left: 950px;
+		width: 20px; 
+		height: 20px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		transform: rotate(-20deg);
+		z-index: 1;	
+	}
+
+	#sideimage18 {
+		position: absolute;
+		top: 2920px;
+		left: 870px;
+		width: 12px; 
+		height: 12px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		transform: rotate(15deg);
+		z-index: 1;	
+	}
+
+	#sideimage19 {
+		position: absolute;
+		top: 2990px;
+		left: 935px;
+		width: 35px; 
+		height: 35px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		transform: rotate(-15deg);
+		z-index: 1;	
+	}
+
+	#sideimage20 {
+		position: absolute;
+		top: 3030px;
+		left: 995px;
+		width: 42px; 
+		height: 42px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		transform: rotate(8deg);
+		z-index: 1;	
+	}
+
+	#sideimage21 {
+		position: absolute;
+		top: 3000px;
+		left: 1100px;
+		width: 46px; 
+		height: 46px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		transform: rotate(-20deg);
+		z-index: 1;	
+	}
+
+	#sideimage22 {
+		position: absolute;
+		top: 2990px;
+		left: 1038px;
+		width: 25px; 
+		height: 25px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		transform: rotate(25deg);
+		z-index: 1;	
+	}
+
+	#sideimage23 {
+		position: absolute;
+		top: 3030px;
+		left: 1175px;
+		width: 15px; 
+		height: 15px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		transform: rotate(15deg);
+		z-index: 1;	
+	}
+
+	#sideimage24 {
+		position: absolute;
+		top: 3065px;
+		left: 1085px;
+		width: 23px; 
+		height: 23px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		transform: rotate(15deg);
+		z-index: 1;	
+	}
+
+	#sideimage25 {
+		position: absolute;
+		top: 2960px;
+		left: 1180px;
+		width: 52px; 
+		height: 52px; 
+
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/images%202_zpsdpj4opeq.png");
+		background-size: cover;
+		transform: rotate(30deg);
+		z-index: 1;	
+	}
+
+#sideimage26 {
+	position: absolute;
+	top: 4030px;
+	left: 990px;
+	width: 200px; 
+	height: 200px; 
+
+	background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/Untitled-7_zpseibbdwar.jpg");
+	background-size: cover;
+	z-index: 1;	
+}
+
+#sideimage27 {
+	position: absolute;
+	top: 4345px;
+	left: 65px;
+	width: 200px; 
+	height: 200px; 
+
+	background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/Bathrobecabalicon_zpsefc5clva.png");
+	background-size: cover;
+	transform: rotate(-30deg);
+	z-index: 1;	
+}
+
+#introbox:hover, #box1:hover, #box2:hover, #box3:hover, #box4:hover, #box6:hover, #box7:hover, #box8:hover {
+     transform:scale(1.25);
+
+     z-index: 1;
+}
+
+#box5:hover {
+	transform: scale(1.75);
+
+	z-index: 1;
+}
+
+
+#spacer {
+	position: absolute;
+	top: 5200px;
+	width: 100px;
+	height: 100px;
+}
+
 
 #connection1 {
 	position: fixed;
@@ -265,4 +887,8 @@ body {
 
 #connection1:hover, #connection2:hover, #connection3:hover, #connection4:hover {
 	opacity: .1;
+}
+
+a {
+	text-decoration: none;
 }
