@@ -148,6 +148,16 @@ body {
 	width: 515px;
 	text-align: justify;
 }
+	
+	#sidetext8 {
+		position: absolute;
+		top: 1600px;
+		left: 865px;
+
+		transform: rotate(5deg);
+
+		z-index: 1;
+	}
 
 #text3 {
 	position: absolute;
@@ -161,8 +171,6 @@ body {
 		position: absolute;
 		top: 2185px;
 		left: 210px;
-		width: 300px;
-		text-align: left;
 
 		transform: rotate(-5deg);
 		z-index: 1;
@@ -174,8 +182,6 @@ body {
 		position: absolute;
 		top: 2068px;
 		left: 53px;
-		width: 300px;
-		text-align: left;
 
 		transform: rotate(4deg);
 		z-index: 1;
@@ -187,8 +193,6 @@ body {
 		position: absolute;
 		top: 2124px;
 		left: 452px;
-		width: 300px;
-		text-align: left;
 
 		transform: rotate(-12deg);
 		z-index: 1;
@@ -206,8 +210,6 @@ body {
 		position: absolute;
 		top: 2859px;
 		left: 912px;
-		width: 300px;
-		text-align: left;
 
 		transform: rotate(5deg);
 		z-index: 1;
@@ -222,6 +224,16 @@ body {
 	width: 615px;
 	text-align: left;
 }
+
+	#sidetext9 {
+		position: absolute;
+		top: 3403px;
+		left: 150px;
+
+		transform: rotate(-5deg);
+
+		z-index: 1;
+	}
 
 #text6 {
 	position: absolute;
@@ -400,6 +412,20 @@ body {
 		background-size: cover;
 
 		transform: rotate(-8deg);
+		z-index: 1;
+	}
+
+	#sideimage30 {
+		position: absolute;
+		top: 1603px;
+		left: 958px;
+		width: 40px;
+		height: 40px;
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/Untitled-11_zpsvhrwlt7z.jpg");
+		background-size: cover;
+
+		transform: rotate(-25deg);
+
 		z-index: 1;
 	}
 
