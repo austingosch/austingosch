@@ -70,8 +70,15 @@ body {
 
 .text {
 	font-size: 45px; 
-	color: black; 
 	font-family: Indie Flower;
+}
+
+.sidetext {
+	font-size: 25px;
+	font-family: Indie Flower;
+	color: black;
+
+	z-index: 1;
 }
 
 #hellotext {
@@ -89,18 +96,26 @@ body {
 	left: 535px;	
 	text-align: left;
 }
+
+	#sidetext7 {
+		font-size: 23px;
+		position: absolute;
+		top: 443px;
+		left: 873px;
+		opacity: .65;
+
+		transform: rotate(5deg);
+
+		z-index: 1;
+	}
 	
 	#sidetext5 {
 		font-size: 20px; 
-		color: black; 
-		font-family: Indie Flower;	
 
 		position: absolute;
 		top: 465px;
 		left: 410px;
 		width: 275px;
-		text-align: left;
-		color: black;
 		opacity: .65;
 
 		z-index: 1;
@@ -113,6 +128,18 @@ body {
 	width: 515px;
 	text-align: left;
 }
+	
+	#sidetext6 {
+		font-size: 35px;
+
+		position: absolute;
+		top: 1060px;
+		left: 265px;
+
+		transform: rotate(-5deg);
+
+		z-index: 1;
+	}
 
 #text2 {
 	position: absolute;
@@ -131,10 +158,6 @@ body {
 }
 
 	#sidetext1 {
-		font-size: 25px; 
-		color: black; 
-		font-family: Indie Flower;	
-
 		position: absolute;
 		top: 2185px;
 		left: 210px;
@@ -147,8 +170,6 @@ body {
 
 	#sidetext2 {
 		font-size: 15px; 
-		color: black; 
-		font-family: Indie Flower;	
 
 		position: absolute;
 		top: 2068px;
@@ -162,11 +183,9 @@ body {
 
 	#sidetext3 {
 		font-size: 12px; 
-		color: black; 
-		font-family: Indie Flower;	
 
 		position: absolute;
-		top: 2121px;
+		top: 2124px;
 		left: 452px;
 		width: 300px;
 		text-align: left;
@@ -184,10 +203,6 @@ body {
 }
 
 	#sidetext4 {
-		font-size: 25px; 
-		color: black; 
-		font-family: Indie Flower;	
-
 		position: absolute;
 		top: 2859px;
 		left: 912px;
@@ -196,6 +211,8 @@ body {
 
 		transform: rotate(5deg);
 		z-index: 1;
+
+		color: #990000;
 	}
 
 #text5 {
@@ -295,7 +312,7 @@ body {
 		z-index: 1;
 	}
 
-	#sideimage35 {
+	#sideimage28 {
 		position: absolute;
 		top: 392px;
 		left: 395px;
@@ -334,6 +351,20 @@ body {
 	transform: rotate(-5deg);
 }
 
+	#sideimage29 {
+		position: absolute;
+		top: 1055px;
+		left: 360px;
+		width: 35px;
+		height: 35px;
+		background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/14531-illustration-of-a-house-pv_zpsbszylono.jpg");
+		background-size: cover;
+
+		transform: rotate(3deg);
+
+		z-index: 1;
+	}
+
 #backbox2 {
 	position: absolute;
 	top: 1285px;
@@ -360,7 +391,7 @@ body {
 
 	#sideimage1 {
 		position: absolute;
-		top: 1605px;
+		top: 1615px;
 		left: 1010px;
 		width: 121px; 
 		height: 95px; 
@@ -424,7 +455,7 @@ body {
 
 #backbox5 {
 	position: absolute;
-	top: 2025px;
+	top: 2028px;
 	left: 439px;
 	width: 119px; 
 	height: 135px; 
@@ -437,7 +468,7 @@ body {
 
 #box5 {
 	position: absolute;
-	top: 2032px;
+	top: 2033px;
 	left: 442px;
 	width: 111px; 
 	height: 111px; 
