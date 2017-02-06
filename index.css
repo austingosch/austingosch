@@ -1,139 +1,106 @@
 body {
-    background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/SeaFoam_zpsaohswxho.jpg?1432456902533&1432456903321");
+    background-image: url("https://i.imgur.com/NYi3Ffk.jpg");
     -webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
 }
 
-.headerone {
-	text-align: left;
-}
-
-.aus {
-	position: absolute;
-	top: 0px;
-	left: 20px;
-
-	font-size: 65px; 
-	font-weight: 100px; 
-	color: white;
-	opacity: .4; 
+/* Styling the logo header */
+.header {
 	font-family: Open Sans;
-	text-decoration: none;
 	text-align: left;
+	font-weight: 800;
+	font-size: 65px;
+	color: white;
+	opacity: .4;
 }
 
-.tin {
-	position: absolute;
+/* Individual placement of logo header pieces */
+#aus {
+	position: fixed;
+	top: 0px;
+	left: 20px; 
+}
+
+/* ^^ */
+#tin {
+	position: fixed;
 	top: 55px;
 	left: 20px;
-
-	width: 100px;
-
-	font-size: 65px; 
-	font-weight: 100px; 
-	color: white; 
-	opacity: .4;
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: justify;
 }
 
-.go {
-	position: absolute;
+/* ^^ */
+#go {
+	position: fixed;
 	top: 128px;
-	left: 20px;
-
-	font-size: 65px;  
-	font-weight: 100px;
-	color: white; 
-	opacity: .4;
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;	
+	left: 20px;	
 }
 
-.sch {
+/* ^^ */
+#sch {
 	position: absolute;
 	top: 183px;
-	left: 23px;
-
-	font-size: 65px; 
-	font-weight: 100px;
-	color: white; 
-	opacity: .4;
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;	
+	left: 23px;	
 }
 
-.photography {
+/* ^^ */
+#photography {
 	position: absolute;
 	top: 250px;
 	left: 27px;
-
-	font-size: 22px; 
-	font-weight: 100px;
-	color: white; 
-	opacity: .4;
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;	
+	font-size: 22px; 	
 }
 
-.line {
+/* ^^ */
+#line {
 	position: absolute;
 	top: 135px;
 	left: 20px;
 	height: 3.5px;
 	width: 137px;
 	background-color: white;
-	opacity: .4;
 }
 
-.navigation1 {
+/* Styling the navigation menu */
+.nav {
+	font-size: 20px;
+	text-align: left;
+	font-weight: bold;
+	font-family: Open Sans;
+	text-align: left;
+	color: white;
+}
+
+/* Individual placement of navigation menu pieces */
+#navigation1 {
 	position: absolute;
 	top: 15px;
 	left: 172px;
-
-	font-size: 20px;  
-	color: white; 
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;
 }
 
-.navigation2 {
+/* ^^ */
+#navigation2 {
 	position: absolute;
 	top: 35px;
 	left: 172px;
-
-	font-size: 20px;  
-	color: white; 
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;
 }
 
-.navigation3 {
+/* ^^ */
+#navigation3 {
 	position: absolute;
 	top: 55px;
 	left: 172px;
-
-	font-size: 20px;  
-	color: white; 
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;
 }
 
-.navigation1:hover, .navigation2:hover, .navigation3:hover, .navigation4:hover, .navigation5:hover {
+/* Making hover action for navigation menu */
+#navigation1:hover, #navigation2:hover, #navigation3:hover {
 	color: black;
 }
 
+/* Styling the gray sidebar on right side of page */
 .sidebar {
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	left: 950px;
 	height: 619px;
@@ -143,48 +110,30 @@ body {
 	opacity: .75;
 }
 
-#sidebar {
-	position: absolute;
-	top: 15px;
-	left: 950px;
+/* Styling the pictures in sidebar on right side of page */
+.sidepics {
+	position: fixed;
+	top: -4px;
+	left: 910px;
 	height: 600px;
 	width: 250px;
 
 	text-align: center;
 }
 
-#connection1 {
+/* Placing the connections in bottom left of page */
+#connect {
 	position: fixed;
-	top: 575px;
-	left: 20px;
-	width: 25px;
-	height: 25px;
+	top: 550px;
+	left: -18px;
 }
 
-#connection2 {
-	position: fixed;
-	top: 575px;
-	left: 55px;
-	width: 25px;
-	height: 25px;
+/* Making connections horrizonal, inline list rather than vertical */
+.connectlist li {
+	display: inline;
 }
 
-#connection3 {
-	position: fixed;
-	top: 575px;
-	left: 90px;
-	width: 25px;
-	height: 25px;
-}
-
-#connection4 {
-	position: fixed;
-	top: 575px;
-	left: 125px;
-	width: 25px;
-	height: 25px;
-}
-
-#connection1:hover, #connection2:hover, #connection3:hover, #connection4:hover {
+/* Making hover action for connections */
+#connect1:hover, #connect2:hover, #connect3:hover, #connect4:hover {
 	opacity: .1;
 }
