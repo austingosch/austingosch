@@ -1,47 +1,123 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 
-	<link rel="stylesheet" type="text/css" href="index.css"/>
-	<title>Austin Gosch Photography</title>
+		<!-- Webpage information for the computer to identify page -->
+		<title>AG Photo</title>
+		<meta name="author" content="Austin Gosch">
+		<meta name="keywords" content="photography">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+		<!-- Linking HTML to CSS -->
+		<link rel="stylesheet" type="text/css" href="index.css"/>
 
-</head>
-<body>
+		<!-- Internal CSS -->
+		<style>
+			/* Setting all links to no text decoration */
+			a {
+				text-decoration: none;
+			}
 
-	<div>
-		<h1 class="headerone">
-			<a class="aus" href="index.html">AUS</a>
-			<a class="tin" href="index.html">TIN.</a>
-			<a class="go" href="index.html">GO</a>
-			<a class="sch" href="index.html">SCH.</a>
-			<a class="photography" href="index.html">photography</a>
+			/*Setting specific link class to color white after being visted */
+			.link:visited {
+				color: white;
+			}
+		</style>
 
-			<div class="line" href="index.html"></div>
+		<!-- Proving a favicon for browser -->
+		<link rel="shortcut icon" href="http://i280.photobucket.com/albums/kk178/austingosch12/Pier_zpsjx0iqcu0.jpg?1432456902533&1432456903321" type="image/x-icon">
 
-			<a class="navigation1" href="photos.html">PHOTOS</a>
-			<a class="navigation2" href="blog.html">BLOG</a>
-			<a class="navigation3" href="aboutme.html">ME</a>
+		<!-- Loading fonts from Google Fonts needed for pages - load them to ensure that they can be accessed on any computer or browser -->
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
-			<div class="sidebar"></div>
-		</h1>
-	</div>
+	</head>
+	<body>
 
- 	<div id="sidebar">		
-		<img id="sidebar1" src="http://i280.photobucket.com/albums/kk178/austingosch12/Pier_zpsjx0iqcu0.jpg?1432456902533&1432456903321" width=230 height=155.13>
-		<img id="sidebar2" src="http://i280.photobucket.com/albums/kk178/austingosch12/pjimage_zpslcu7wogc.jpg" width=230 height=152.88>
-		<img id="sidebar3" src="http://i280.photobucket.com/albums/kk178/austingosch12/Angels%20Landing_zpscqnlotve.jpg" width=230 height=145.48>
-		<img id="sidebar4" src="http://i280.photobucket.com/albums/kk178/austingosch12/Crystal%20Cove_zpslsto76ib.jpg" width=230 height=124.66>
-	</div>	
+		<!-- Creating the title/logo on every page that links back to home page -->
+		<header>
+			<ul class="header" style="list-style-type:none">
+				<li><a class="link" id="aus" href="index.html">AUS</a></li>
+				<li><a class="link" id="tin" href="index.html">TIN.</a></li>
 
-	<div id="connections">
-		<a id="connection1" href="https://www.instagram.com/austingosch/" target="_blank"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/cutmypic%201_zpsjcopuz1a.png" width=30 height=30></a>
-		<a id="connection2" href="https://www.facebook.com/austin.gosch.5" target="_blank"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/cutmypic_zpsxxxq3kxe.png" width=30 height=30></a>
-		<a id="connection3" href="https://www.linkedin.com/in/austin-gosch-39a64a107?trk=nav_responsive_tab_profile_pic" target="_blank"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/cutmypic%202_zpspw23tvba.png" width=30 height=30></a>
-		<a id="connection4"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/cutmypic%203_zpsxa5mwxau.png" width=30 height=30></a>
-	</div>
+				<li><a class="link" id="line" href="index.html"></a></li>
 
-</body>
+				<li><a class="link" id="go" href="index.html">GO</a></li>
+				<li><a class="link" id="sch" href="index.html">SCH.</a></li>
+				<li><a class="link" id="photography" href="index.html"><em>photography</em></a></li>
+			</ul>
+		</header>		
+		
+		<!-- Creating the navigation bar next to the title/logo -->		
+		<nav>
+			<ul class="nav" style="list-style-type:none">
+				<li><a class="link" id="navigation1" href="photos.html"><strong>PHOTOS</strong></a></li>
+				<li><a class="link" id="navigation2" href=""><strong>BLOG</strong></a></li>
+				<li><a class="link" id="navigation3" href="aboutme.html"><strong>ME</strong></a></li>
+			</ul>
+		</nav>
+
+		<!-- Creating the sidebar that the photos on the right side of screen sit in -->
+		<aside class="sidebar"></aside>
+
+		<!-- Loading images that sit in sidebar on right side of screen -->
+	 	<aside>
+	 		<ul class="sidepics" style="list-style-type:none">	
+				<li><img id="sidebar1" 
+					src="https://i.imgur.com/mU09wBr.jpg" 
+					width=230 height=155 
+					alt="Newport Beach Pier" /></li>
+				<li><img id="sidebar2" 
+					src="https://i.imgur.com/pKkFYHc.jpg" 
+					width=230 height=153 
+					alt="Colored Water Splashes" /></li>
+				<li><img id="sidebar3" 
+					src="https://i.imgur.com/NeC2E3x.jpg" 
+					width=230 height=145 
+					alt="Angel's Landing View" /></li>
+				<li><img id="sidebar4" 
+					src="https://i.imgur.com/QIjQaoH.jpg" 
+					width=230 height=125 
+					alt="Crystal Cove Beach" /></li>
+			</ul>
+		</aside>	
+
+		<!-- Creating social media pics and links at bottom of each page -->
+		<footer id="connect">
+			<ul class="connectlist" style="list-style-type:none">
+				<li>
+					<a id="connect1" href="https://www.instagram.com/austingosch/" 
+					target="_blank">
+						<img src="https://i.imgur.com/r91dJG4.png" 
+							width=30 height=30 
+							alt="Instagram Link" />
+					</a>
+				</li>	
+				<li>
+					<a id="connect2" href="https://www.facebook.com/austin.gosch.5" 
+					target="_blank">
+						<img src="https://i.imgur.com/TlQdabF.png" 
+							width=30 height=30 
+							alt="Facebook Link" />
+					</a>
+				</li>	
+				<li>
+					<a id="connect3" href="https://www.linkedin.com/in/austin-gosch-39a64a107?trk=nav_responsive_tab_profile_pic" 
+					target="_blank">
+						<img src="https://i.imgur.com/HfPOyAJ.png" 
+							width=30 height=30
+							alt="Linkedin Link" />
+					</a>
+				</li>	
+				<li>
+					<a id="connect4">
+						<img src="https://i.imgur.com/wrhSoyH.png" 
+							width=30 height=30 
+							alt="Email Link" />
+					</a>
+				</li>	
+			</ul>
+		</footer>
+
+	</body>
 </html>
