@@ -1,52 +1,112 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 
-	<link rel="stylesheet" type="text/css" href="photos.css"/>
-	<title>photos.html</title>
+		<!-- Webpage information for the computer to identify page -->
+		<title>Photo Nav</title>
+		<meta name="author" content="Austin Gosch">
+		<meta name="keywords" content="photography">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+		<!-- Linking HTML to CSS -->
+		<link rel="stylesheet" type="text/css" href="photos.css"/>
 
-</head>
-<body>
+		<!-- Proving a favicon for browser -->
+		<link rel="shortcut icon" href="http://i280.photobucket.com/albums/kk178/austingosch12/Pier_zpsjx0iqcu0.jpg?1432456902533&1432456903321" type="image/x-icon">
 
-	<div>
-		<h1 class="headerone">
-			<a class="aus" href="index.html">AUS</a>
-			<a class="tin" href="index.html">TIN.</a>
-			<a class="go" href="index.html">GO</a>
-			<a class="sch" href="index.html">SCH.</a>
-			<a class="photography" href="index.html">photography</a>
+		<!-- Loading fonts from Google Fonts needed for pages - load them to ensure that they can be accessed on any computer or browser -->
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
-			<div class="line" href="index.html"></div>
+	</head>
+	<body>
 
-			<a class="navigation1" href="photos.html">PHOTOS</a>
-			<a class="navigation2" href="blog.html">BLOG</a>
-			<a class="navigation3" href="aboutme.html">ME</a>
-		</h1>
-	</div>
+		<!-- Creating the title/logo on every page that links back to home page -->
+		<header>
+			<ul class="header" style="list-style-type:none">
+				<li><a class="link" id="aus" href="index.html">AUS</a></li>
+				<li><a class="link" id="tin" href="index.html">TIN.</a></li>
 
-	<a id="gridone" name="gridone" href="landscape.html"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/pier%20grid_zpsy3atnmng.jpg" width=220 height=220 /></a>
-	<a id="gridtwo" name="gridtwo" href="animals.html"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/seal%20grid_zps2lm68k2k.jpg" width=220 height=220 /></a>
-	<a id="gridthree" name="gridthree" href="people.html"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/people%20grid_zpswlfnrzcj.jpg" width=220 height=220 /></a>
-	<a id="gridfour" name="gridfour" href="other.html"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/other%20grid_zpsa1mskczk.jpg" width=220 height=220 /></a>
-	<a href="landscape.html"><div id="textone" name="textone">LANDSCAPES</div></a>
-	<a href="animals.html"><div id="texttwo" name="texttwo">ANIMALS</div></a>
-	<a href="people.html"><div id="textthree" name="textthree">PEOPLE</div></a>
-	<a href="other.html"><div id="textfour" name="textfour">OTHER</div></a>
-	<a href="landscape.html"><div id="textboxone" name="textboxone"></div></a>
-	<a href="animals.html"><div id="textboxtwo" name="textboxtwo"></div></a>
-	<a href="people.html"><div id="textboxthree" name="textboxthree"></div></a>
-	<a href="other.html"><div id="textboxfour" name="textboxfour"></div></a>
+				<li><a class="link" id="line" href="index.html"></a></li>
 
+				<li><a class="link" id="go" href="index.html">GO</a></li>
+				<li><a class="link" id="sch" href="index.html">SCH.</a></li>
+				<li><a class="link" id="photography" href="index.html"><em>photography</em></a></li>
+			</ul>
+		</header>		
+		
+		<!-- Creating the navigation bar next to the title/logo -->		
+		<nav>
+			<ul class="nav" style="list-style-type:none">
+				<li><a class="link" id="navigation1" href="photos.html"><strong>PHOTOS</strong></a></li>
+				<li><a class="link" id="navigation2" href=""><strong>BLOG</strong></a></li>
+				<li><a class="link" id="navigation3" href="aboutme.html"><strong>ME</strong></a></li>
+			</ul>
+		</nav>
 
-	<div id="connections">
-		<a id="connection1" href="https://www.instagram.com/austingosch/" target="_blank"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/cutmypic%201_zpsjcopuz1a.png" width=30 height=30></a>
-		<a id="connection2" href="https://www.facebook.com/austin.gosch.5" target="_blank"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/cutmypic_zpsxxxq3kxe.png" width=30 height=30></a>
-		<a id="connection3" href="https://www.linkedin.com/in/austin-gosch-39a64a107?trk=nav_responsive_tab_profile_pic" target="_blank"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/cutmypic%202_zpspw23tvba.png" width=30 height=30></a>
-		<a id="connection4"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/cutmypic%203_zpsxa5mwxau.png" width=30 height=30></a>
-	</div>
+		<!-- Creating the table that the 4 pictures sit in for nav -->
+		<table id="photogrid" cellspacing="22">
+			<tr>
+	    		<td><a id="gridone" href=""><img src="https://i.imgur.com/mU09wBr.jpg" width=220 height=220 /></a></td>
+	    		<td><a id="gridtwo" href=""><img src="https://i.imgur.com/1sFoObh.jpg" width=220 height=220 /></a></td> 
+	  		</tr>
+	  		<tr>
+	    		<td><a id="gridthree" href=""><img src="https://i.imgur.com/rnMJ8qp.jpg" width=220 height=220 /></a></td>
+	    		<td><a id="gridfour" href=""><img src="https://i.imgur.com/Cj8h3qm.jpg" width=220 height=220 /></a></td> 
+	  		</tr>
+		</table>
 
-</body>
+		<!-- Creating the text boxes and text that sit in them -->
+			<div class="textboxes">
+				<a href="landscape.html"><div id="textboxone"></div></a>
+				<a href="animals.html"><div id="textboxtwo"></div></a>
+				<a href="people.html"><div id="textboxthree"></div></a>
+				<a href="other.html"><div id="textboxfour"></div></a>
+			</div>
+
+			<nav class="text">
+				<a href="landscape.html"><div id="textone">LANDSCAPES</div></a>
+				<a href="animals.html"><div id="texttwo">ANIMALS</div></a>
+				<a href="people.html"><div id="textthree">PEOPLE</div></a>
+				<a href="other.html"><div id="textfour">OTHER</div></a>
+			</nav>
+
+		<!-- Creating social media pics and links at bottom of each page -->
+		<footer id="connect">
+			<ul class="connectlist" style="list-style-type:none">
+				<li>
+					<a id="connect1" href="https://www.instagram.com/austingosch/" 
+					target="_blank">
+						<img src="https://i.imgur.com/r91dJG4.png" 
+							width=30 height=30 
+							alt="Instagram Link" />
+					</a>
+				</li>	
+				<li>
+					<a id="connect2" href="https://www.facebook.com/austin.gosch.5" 
+					target="_blank">
+						<img src="https://i.imgur.com/TlQdabF.png" 
+							width=30 height=30 
+							alt="Facebook Link" />
+					</a>
+				</li>	
+				<li>
+					<a id="connect3" href="https://www.linkedin.com/in/austin-gosch-39a64a107?trk=nav_responsive_tab_profile_pic" 
+					target="_blank">
+						<img src="https://i.imgur.com/HfPOyAJ.png" 
+							width=30 height=30
+							alt="Linkedin Link" />
+					</a>
+				</li>	
+				<li>
+					<a id="connect4">
+						<img src="https://i.imgur.com/wrhSoyH.png" 
+							width=30 height=30 
+							alt="Email Link" />
+					</a>
+				</li>	
+			</ul>
+		</footer>
+
+	</body>
 </html>
