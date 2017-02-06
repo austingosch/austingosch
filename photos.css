@@ -1,301 +1,211 @@
 body {
-    background-image: url("http://i280.photobucket.com/albums/kk178/austingosch12/SeaFoam_zpsaohswxho.jpg?1432456902533&1432456903321");
+    background-image: url("https://i.imgur.com/NYi3Ffk.jpg");
     -webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
 }
 
-.headerone {
-	text-align: left;
-}
-
-.aus {
-	position: absolute;
-	top: 0px;
-	left: 20px;
-
-	font-size: 65px; 
-	font-weight: 100px; 
-	color: white;
-	opacity: .4; 
-	font-family: Open Sans;
+/* Setting all links to no text decoration */
+a {
 	text-decoration: none;
-	text-align: left;
 }
 
-.tin {
-	position: absolute;
+/*Setting specific link class to color white after being visted */
+.link:visited {
+	color: white;
+}
+
+/* Styling the logo header */
+.header {
+	font-family: Open Sans;
+	text-align: left;
+	font-weight: 800;
+	font-size: 65px;
+	color: white;
+	opacity: .4;
+}
+
+/* Individual placement of logo header pieces */
+#aus {
+	position: fixed;
+	top: 0px;
+	left: 20px; 
+}
+
+/* ^^ */
+#tin {
+	position: fixed;
 	top: 55px;
 	left: 20px;
-
-	width: 100px;
-
-	font-size: 65px; 
-	font-weight: 100px; 
-	color: white; 
-	opacity: .4;
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: justify;
 }
 
-.go {
-	position: absolute;
+/* ^^ */
+#go {
+	position: fixed;
 	top: 128px;
-	left: 20px;
-
-	font-size: 65px;  
-	font-weight: 100px;
-	color: white; 
-	opacity: .4;
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;	
+	left: 20px;	
 }
 
-.sch {
+/* ^^ */
+#sch {
 	position: absolute;
 	top: 183px;
-	left: 23px;
-
-	font-size: 65px; 
-	font-weight: 100px;
-	color: white; 
-	opacity: .4;
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;	
+	left: 23px;	
 }
 
-.photography {
+/* ^^ */
+#photography {
 	position: absolute;
 	top: 250px;
 	left: 27px;
-
-	font-size: 22px; 
-	font-weight: 100px;
-	color: white; 
-	opacity: .4;
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;	
+	font-size: 22px; 	
 }
 
-.line {
+/* ^^ */
+#line {
 	position: absolute;
 	top: 135px;
 	left: 20px;
 	height: 3.5px;
 	width: 137px;
 	background-color: white;
-	opacity: .4;
 }
 
-.navigation1 {
+/* Styling the navigation menu */
+.nav {
+	font-size: 20px;
+	text-align: left;
+	font-weight: bold;
+	font-family: Open Sans;
+	text-align: left;
+	color: white;
+}
+
+/* Individual placement of navigation menu pieces */
+#navigation1 {
 	position: absolute;
 	top: 15px;
 	left: 172px;
-
-	font-size: 20px;  
-	color: white; 
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;
 }
 
-.navigation2 {
+/* ^^ */
+#navigation2 {
 	position: absolute;
 	top: 35px;
 	left: 172px;
-
-	font-size: 20px;  
-	color: white; 
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;
 }
 
-.navigation3 {
+/* ^^ */
+#navigation3 {
 	position: absolute;
 	top: 55px;
 	left: 172px;
-
-	font-size: 20px;  
-	color: white; 
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;
 }
 
-.navigation1:hover, .navigation2:hover, .navigation3:hover {
+/* Making hover action for navigation menu */
+#navigation1:hover, #navigation2:hover, #navigation3:hover {
 	color: black;
 }
 
-#connection1 {
-	position: fixed;
-	top: 575px;
-	left: 20px;
-	width: 25px;
-	height: 25px;
-}
-
-#connection2 {
-	position: fixed;
-	top: 575px;
-	left: 55px;
-	width: 25px;
-	height: 25px;
-}
-
-#connection3 {
-	position: fixed;
-	top: 575px;
-	left: 90px;
-	width: 25px;
-	height: 25px;
-}
-
-#connection4 {
-	position: fixed;
-	top: 575px;
-	left: 125px;
-	width: 25px;
-	height: 25px;
-}
-
-#connection1:hover, #connection2:hover, #connection3:hover, #connection4:hover {
-	opacity: .1;
-}
-
-#gridone {
-	position: absolute;
-	top: 75px;
-	left: 400px;
-}
-
-#textone {
-	position: absolute;
-	top: 253px;
-	left: 415px;
-
+/* Styling the text in the text class to be white */
+#textone, #texttwo, #textthree, #textfour {
+	color: white;
 	font-family: Open Sans;
 	font-size: 25px;
-	color: white;
-
+	position: fixed;
 	z-index: 2;
+}
+
+#textboxone, #textboxtwo, #textboxthree, #textboxfour {
+	position: fixed;
+	background-color: gray;
+	opacity: .5;
+	z-index: 1;
+}
+
+/* Positioning the 4 text boxes and their gray backgrounds that overlay the nav photos */
+#textone {
+	top: 252px;
+	left: 450px;
 }
 
 #textboxone {
-	position: absolute;
 	top: 250px;
-	left: 400px;
+	left: 427px;
 	width: 220px;
 	height: 40px;
-
-	background-color: gray;
-	opacity: .5;
-
-	z-index: 1;
-}
-
-#gridtwo {
-	position: absolute;
-	top: 75px;
-	left: 670px;
 }
 
 #texttwo {
-	position: absolute;
-	top: 253px;
-	left: 685px;
-
-	font-family: Open Sans;
-	font-size: 25px;
-	color: white;
-
-	z-index: 2;
+	top: 250px;
+	left: 694px;
 }
 
 #textboxtwo {
-	position: absolute;
+	position: fixed;
 	top: 250px;
-	left: 670px;
+	left: 671px;
 	width: 220px;
 	height: 40px;
-
-	background-color: gray;
-	opacity: .6;
-
-	z-index: 1;
-}
-
-#gridthree {
-	position: absolute;
-	top: 325px;
-	left: 400px;
 }
 
 #textthree {
-	position: absolute;
-	top: 503px;
-	left: 415px;
-
-	font-family: Open Sans;
-	font-size: 25px;
-	color: white;
-
-	z-index: 2;
+	top: 501px;
+	left: 450px;
 }
 
 #textboxthree {
-	position: absolute;
-	top: 500px;
-	left: 400px;
+	position: fixed;
+	top: 499px;
+	left: 427px;
 	width: 220px;
 	height: 40px;
-
-	background-color: gray;
-	opacity: .6;
-
-	z-index: 1;
-}
-
-#gridfour {
-	position: absolute;
-	top: 325px;
-	left: 670px;
 }
 
 #textfour {
-	position: absolute;
-	top: 503px;
-	left: 685px;
-
-	font-family: Open Sans;
-	font-size: 25px;
-	color: white;
-
-	z-index: 2;
+	top: 501px;
+	left: 694px;
 }
 
 #textboxfour {
-	position: absolute;
-	top: 500px;
-	left: 670px;
+	position: fixed;
+	top: 499px;
+	left: 671px;
 	width: 220px;
 	height: 40px;
-
-	background-color: gray;
-	opacity: .6;
-
-	z-index: 1;
 }
 
+/* Changing the opacity of the textboxes when hovered upon */
 #textboxone:hover, #textboxtwo:hover, #textboxthree:hover, #textboxfour:hover {
 	opacity: 1;
 }
 
+/* Styling the table/grid the photos are in for nav */
+#photogrid {
+	position: fixed;
+	top: 60px;
+	left: 405px;
+}
+
+/* Having opacity of pictures in table/grid decrease when hovered upon */
 #gridone:hover, #gridtwo:hover, #gridthree:hover, #gridfour:hover {
 	opacity: .6;
+}
+
+/* Placing the connections in bottom left of page */
+#connect {
+	position: fixed;
+	top: 550px;
+	left: -15px;
+}
+
+/* Making connections horrizonal, inline list rather than vertical */
+.connectlist li {
+	display: inline;
+}
+
+/* Making hover action for connections */
+#connect1:hover, #connect2:hover, #connect3:hover, #connect4:hover {
+	opacity: .1;
 }
