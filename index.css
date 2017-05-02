@@ -1,8 +1,5 @@
 body {
-    background-image: url("https://i.imgur.com/NYi3Ffk.jpg");
-    -webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
+    background-image: url("http://i.imgur.com/WDzYe4x.jpg");
   	background-size: cover;
 }
 
@@ -12,6 +9,7 @@ body {
 	text-align: left;
 	font-weight: 800;
 	font-size: 65px;
+
 	color: white;
 	opacity: .4;
 }
@@ -69,7 +67,7 @@ body {
 	font-weight: bold;
 	font-family: Open Sans;
 	text-align: left;
-	color: white;
+	text-decoration: none;
 }
 
 /* Individual placement of navigation menu pieces */
@@ -77,6 +75,7 @@ body {
 	position: absolute;
 	top: 15px;
 	left: 172px;
+	color: white;
 }
 
 /* ^^ */
@@ -84,6 +83,7 @@ body {
 	position: absolute;
 	top: 35px;
 	left: 172px;
+	color: white;
 }
 
 /* ^^ */
@@ -91,6 +91,7 @@ body {
 	position: absolute;
 	top: 55px;
 	left: 172px;
+	color: white;
 }
 
 /* Making hover action for navigation menu */
@@ -121,10 +122,40 @@ body {
 	text-align: center;
 }
 
+button {
+	background-size: cover;
+	border: none;
+	padding: 0px;
+}
+
+button:hover {
+	opacity: .6;
+}
+
+#button1 {
+	width: 230px;
+	height: 153px;
+}
+
+#button2 {
+	width: 230px;
+	height: 153px;
+}
+
+#button3 {
+	width: 230px;
+	height: 145px;
+}
+
+#button4 {
+	width: 230px;
+	height: 125px;
+}
+
 /* Placing the connections in bottom left of page */
 #connect {
 	position: fixed;
-	top: 550px;
+	top: 525px;
 	left: -18px;
 }
 
@@ -136,4 +167,15 @@ body {
 /* Making hover action for connections */
 #connect1:hover, #connect2:hover, #connect3:hover, #connect4:hover {
 	opacity: .1;
+}
+
+/* Styling the date calculated by JQuery */
+#date {
+	position: absolute;
+	top: 574px;
+	left: 30px;
+	font-size: 20px;
+	font-family: Open Sans;
+	color: white;
+	opacity: .8;
 }
