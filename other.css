@@ -220,7 +220,14 @@ a {
 	left: 1107px;
 
 	text-align: center;
-	margin: 1px;
+}
+
+li {
+	margin: 0px;
+}
+
+li:not(:last-child) {
+    margin-bottom: 5px;
 }
 
 .buttons {
