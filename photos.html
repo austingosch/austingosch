@@ -27,11 +27,11 @@
 			var windowSize = $(window).width();
 			alert(windowSize);
 
-			$('body').click(function() {
+			$('#button100').click(function() {
 				$("#nav1", "#nav3").css('width', windowSize/2 - 213);
 				$("#nav2", "#nav4").css('width', windowSize/2 + 31);
 			});
-			
+
 			// When you mouseover an image for navigation, the body's background changes to that image
 			$("#nav1").on("mouseover", function () {
    				 $('body').css('background-image', 'url(http://i.imgur.com/7QcXDme.jpg)');
@@ -57,6 +57,7 @@
 
 	</head>
 	<body>
+		<div id="button100" type="button"></div>
 		<div id="date"></div>
 
 		<!-- Creating the title/logo on every page that links back to home page -->
