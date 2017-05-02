@@ -2,216 +2,208 @@ body {
 	background-color: white;
 }
 
-.headerone {
-	text-align: left;
+/* Setting all links to no text decoration */
+a {
+	text-decoration: none;
 }
 
-.aus {
+/*Setting specific link class to color white after being visted */
+.link:visited {
+	color: black;
+}
+
+/* Styling the logo header */
+.header {
+	font-family: Open Sans;
+	text-align: left;
+	font-weight: 800;
+	font-size: 65px;
+	color: black;
+	opacity: .3;
+}
+
+/* Individual placement of logo header pieces */
+#aus {
 	position: fixed;
 	top: 0px;
-	left: 20px;
-
-	font-size: 65px; 
-	font-weight: 100px; 
-	color: black;
-	opacity: .4; 
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;
+	left: 20px; 
 }
 
-.tin {
+/* ^^ */
+#tin {
 	position: fixed;
 	top: 55px;
 	left: 20px;
-
-	width: 100px;
-
-	font-size: 65px; 
-	font-weight: 100px; 
-	color: black; 
-	opacity: .4;
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: justify;
 }
 
-.go {
+/* ^^ */
+#go {
 	position: fixed;
 	top: 128px;
-	left: 20px;
-
-	font-size: 65px;  
-	font-weight: 100px;
-	color: black; 
-	opacity: .4;
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;	
+	left: 20px;	
 }
 
-.sch {
+/* ^^ */
+#sch {
 	position: fixed;
 	top: 183px;
-	left: 23px;
-
-	font-size: 65px; 
-	font-weight: 100px;
-	color: black; 
-	opacity: .4;
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;	
+	left: 23px;	
 }
 
-.photography {
+/* ^^ */
+#photography {
 	position: fixed;
 	top: 250px;
 	left: 27px;
-
-	font-size: 22px; 
-	font-weight: 100px;
-	color: black; 
-	opacity: .4;
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;	
+	font-size: 22px; 	
 }
 
-.line {
+/* ^^ */
+#line {
 	position: fixed;
 	top: 135px;
 	left: 20px;
-	height: 3.5px;
+	height: 4px;
 	width: 137px;
 	background-color: black;
-	opacity: .4;
 }
 
-.navigation1 {
-	position: absolute;
-	top: 15px;
-	left: 172px;
-
-	font-size: 15px;  
-	color: black; 
-	font-family: Open Sans;
-	text-decoration: none;
+/* Styling the navigation menu */
+.nav {
+	font-size: 20px;
 	text-align: left;
-}
-
-.navigation2 {
-	position: absolute;
-	top: 30px;
-	left: 172px;
-
-	font-size: 15px;  
-	color: black; 
+	font-weight: bold;
 	font-family: Open Sans;
-	text-decoration: none;
 	text-align: left;
+	text-decoration: none;
 }
 
-.navigation3 {
-	position: absolute;
-	top: 45px;
-	left: 172px;
-
-	font-size: 15px;  
-	color: black; 
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;
+/* Individual placement of navigation menu pieces */
+#navigation1 {
+	position: fixed;
+	top: 310px;
+	left: 25px;
+	color: black;
+	opacity: .3;
 }
 
-.navigation4 {
-	position: absolute;
-	top: 60px;
-	left: 172px;
-
-	font-size: 15px;  
-	color: black; 
-	font-family: Open Sans;
-	text-decoration: none;
-	text-align: left;
+/* ^^ */
+#navigation2 {
+	position: fixed;
+	top: 330px;
+	left: 25px;
+	color: black;
+	opacity: .3;
 }
 
-.navigation1:hover, .navigation2:hover, .navigation3:hover, .navigation4:hover, .navigation5:hover {
-	color: gray;
-	opacity: .75;
+/* ^^ */
+#navigation3 {
+	position: fixed;
+	top: 350px;
+	left: 25px;
+	color: black;
+	opacity: .3;
+}
+
+/* Making hover action for navigation menu */
+#navigation1:hover, #navigation2:hover, #navigation3:hover {
+	opacity: .99;
 }
 
 #backrect {
 	position: absolute;
-	top: 100px;
+	top: 0px;
 	left: 172px;
-	width: 928.5px;
-	height: 8446.5px;
+	width: 929px;
+	height: 619px;
 
-	background-color: gray;
-	opacity: .2;
-	z-index: 1;
+	background-image: url('http://i.imgur.com/7QcXDme.jpg');
+	background-size: cover;
+}
+
+.cycle {
+    position: relative;
+    height: 320px;
+    width: 320px;
+}
+
+.cycle img {
+    position:absolute;
+    left: 0;
+    top: 0;
 }
 
 #photos {
 	position: absolute;
-	top: 100px;
-	left: 172px;
-	width: 928.5px;
+	top: 619px;
+	left: 132px;
+	width: 929px;
 
 	text-align: center;
 	z-index: 2;
 }
 
-#toparrow {
+#left {
 	position: fixed;
-	top: 500px;
-	left: 72px;
-	width: 35px;
-	height: 50px;
+	top: 450px;
+	left: 45px;
+	transform: rotate(-90deg);
+	
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
 }
 
-#toparrow:hover {
+#right {
+	position: fixed;
+	top: 450px;
+	left: 85px;
+	transform: rotate(90deg);
+	
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+#left:hover, #right:hover {
 	opacity: .3;
 }
 
-#connection1 {
+/* Placing the connections in bottom left of page */
+#connect {
 	position: fixed;
-	top: 575px;
-	left: 20px;
-	width: 25px;
-	height: 25px;
+	top: 525px;
+	left: -18px;
 }
 
-#connection2 {
-	position: fixed;
-	top: 575px;
-	left: 55px;
-	width: 25px;
-	height: 25px;
+/* Making connections horrizonal, inline list rather than vertical */
+.connectlist li {
+	display: inline;
 }
 
-#connection3 {
-	position: fixed;
-	top: 575px;
-	left: 90px;
-	width: 25px;
-	height: 25px;
+/* Making hover action for connections */
+#connect1:hover, #connect2:hover, #connect3:hover, #connect4:hover {
+	opacity: .1;
 }
 
-#connection4 {
-	position: fixed;
-	top: 575px;
-	left: 125px;
-	width: 25px;
-	height: 25px;
+/* Styling the date calculated by JQuery */
+#date {
+	position: absolute;
+	top: 574px;
+	left: 30px;
+	font-size: 20px;
+	font-family: Open Sans;
+	color: gray;
+	opacity: .8;
 }
 
-#connection1:hover, #connection2:hover, #connection3:hover, #connection4:hover {
-	opacity: .2;
-}
-
-.sidebar {
+#sidephotosback {
 	position: fixed;
 	top: 0px;
 	left: 1140px;
@@ -219,19 +211,26 @@ body {
 	width: 85px;
 
 	background-color: gray;
-	opacity: .6;
+	opacity: .3;
 }
 
-#sidebar {
+#sidephotos {
 	position: fixed;
-	top: 55px;
-	left: 1148px;
-	height: 619px;
-	width: 70px;
+	top: 30px;
+	left: 1107px;
 
 	text-align: center;
 }
 
-#sphoto1:hover, #sphoto2:hover, #sphoto3:hover, #sphoto4:hover, #sphoto5:hover, #sphoto6:hover, #sphoto7:hover, #sphoto8:hover, #sphoto9:hover, #sphoto10:hover, #sphoto11:hover, #sphoto12:hover, #sphoto13:hover, #sphoto14:hover, #sphoto15:hover, #sphoto16:hover, #sphoto17:hover {
+.buttons {
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+#sphoto1:hover, #sphoto2:hover, #sphoto3:hover, #sphoto4:hover, #sphoto5:hover, #sphoto6:hover, #sphoto7:hover, #sphoto8:hover, #sphoto9:hover, #sphoto10:hover, #sphoto11:hover, #sphoto12:hover, #sphoto13:hover, #sphoto14:hover {
 	opacity: .4;
 }
