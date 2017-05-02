@@ -24,13 +24,20 @@
 		<script>
 		$(document).ready(function() {
 			// Centering photos nav regardless of screen size
-			var windowSize = $(window).width();
-			alert(windowSize);
+			var windowWidth = $(window).width();
+			var windowHeight = $(window).height();
+			
+			alert(windowWidth + ' x ' + windowHeight);
+			
 			$('#button100').click(function() {
-				$("#nav1").css('left', windowSize/2 - 213);
-				$("#nav2").css('left', windowSize/2 + 31);
-				$("#nav3").css('left', windowSize/2 - 213);
-				$("#nav4").css('left', windowSize/2 + 31);
+				$("#nav1").css({'left': windowSize / 2 - 213;
+						'height': windowHeight / 2 - 207.5});
+				$("#nav2").css({'left': windowSize / 2 - 31;
+						'height': windowHeight / 2 - 207.5});
+				$("#nav3").css({'left': windowSize / 2 - 213;
+						'height': windowHeight / 2 + 36.5});
+				$("#nav4").css({'left': windowSize / 2 - 31;
+						'height': windowHeight / 2 + 36.5});
 			});
 
 			// When you mouseover an image for navigation, the body's background changes to that image
