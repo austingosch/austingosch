@@ -184,6 +184,11 @@ a {
 	opacity: 1;
 }
 
+/* Centering the photos not matter the screen size */
+.photosNav {
+	margin: 0 auto;
+}
+
 /* Styling the navigation pictures */
 #nav1 {
 	position: fixed;
