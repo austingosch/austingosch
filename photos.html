@@ -26,8 +26,11 @@
 			// Centering photos nav regardless of screen size
 			var windowSize = $(window).width();
 			alert(windowSize);
-			$("#nav1", "#nav3").css('width', windowSize/2 - 213);
-			$("#nav2", "#nav4").css('width', windowSize/2 + 31);
+
+			$(function() {
+				$("#nav1", "#nav3").css('width', windowSize/2 - 213);
+				$("#nav2", "#nav4").css('width', windowSize/2 + 31);
+			});
 			
 			// When you mouseover an image for navigation, the body's background changes to that image
 			$("#nav1").on("mouseover", function () {
