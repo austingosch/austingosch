@@ -1,77 +1,166 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="people.css">
-		<title>nature.html</title>
 
-	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+		<!-- Webpage information for the computer to identify page -->
+		<title>People</title>
+		<meta name="author" content="Austin Gosch">
+		<meta name="keywords" content="photography">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Linking in Google JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+		<script type="text/javascript" src="people.js"></script>
+
+		<!-- Linking HTML to CSS -->
+		<link rel="stylesheet" type="text/css" href="people.css">
+
+		<!-- Proving a favicon for browser -->
+		<link rel="shortcut icon" href="http://i.imgur.com/WDzYe4x.jpg" type="image/x-icon">
+
+		<!-- Loading fonts from Google Fonts needed for pages - load them to ensure that they can be accessed on any computer or browser -->
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
 	</head>
 	<body>
-		<div>
-			<h1 class="headerone">
-				<a class="aus" href="index.html">AUS</a>
-				<a class="tin" href="index.html">TIN.</a>
-				<a class="go" href="index.html">GO</a>
-				<a class="sch" href="index.html">SCH.</a>
-				<a class="photography" href="index.html">photography</a>
 
-				<div class="line" href="index.html"></div>
+		<!-- Creating the title/logo on every page that links back to home page -->
+		<header>
+			<ul class="header" style="list-style-type:none">
+				<li><a class="link" id="aus" href="index.html">AUS</a></li>
+				<li><a class="link" id="tin" href="index.html">TIN.</a></li>
 
-				<a class="navigation1" href="landscape.html">LANDSCAPE</a>
-				<a class="navigation2" href="animals.html">ANIMALS</a>
-				<a class="navigation3" href="people.html">PEOPLE</a>
-				<a class="navigation4" href="other.html">OTHER</a>
+				<li><a class="link" id="line" href="index.html"></a></li>
 
-				<div class="sidebar"></div>
-			</h1>
-		</div>
+				<li><a class="link" id="go" href="index.html">GO</a></li>
+				<li><a class="link" id="sch" href="index.html">SCH.</a></li>
+				<li><a class="link" id="photography" href="index.html"><em>photography</em></a></li>
+			</ul>
+		</header>		
+		
+		<!-- Creating the navigation bar next to the title/logo -->		
+		<nav>
+			<ul class="nav" style="list-style-type:none">
+				<li><a class="link" id="navigation1" href="photos.html"><strong>PHOTOS</strong></a></li>
+				<li><a class="link" id="navigation2" href="blog.html"><strong>BLOG</strong></a></li>
+				<li><a class="link" id="navigation3" href="aboutme.html"><strong>ME</strong></a></li>
+			</ul>
+		</nav>
 
-		<a href="#top">
-			<div id="toparrow">
-				<img src="http://i280.photobucket.com/albums/kk178/austingosch12/up-arrow-circle-hi_zpspvhv21d2.png" width=35 height=35>
-			</div>
-		</a>
+		<div id='backrect'></div>
 
-		<div id="connections">
-			<a id="connection1" href="https://www.instagram.com/austingosch/" target="_blank"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/cutmypic%201_zpsjcopuz1a.png" width=30 height=30></a>
-			<a id="connection2" href="https://www.facebook.com/austin.gosch.5" target="_blank"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/cutmypic_zpsxxxq3kxe.png" width=30 height=30></a>
-			<a id="connection3" href="https://www.linkedin.com/in/austin-gosch-39a64a107?trk=nav_responsive_tab_profile_pic" target="_blank"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/cutmypic%202_zpspw23tvba.png" width=30 height=30></a>
-			<a id="connection4"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/cutmypic%203_zpsxa5mwxau.png" width=30 height=30></a>
-		</div>
-
-		<div id="photos">
-			<a id="photo1" name="photo1"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0298%202_zpsnomnlqyf.jpg" width=928.5 height=619 /></a>
-			<a id="photo2" name="photo2"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0903_zpsdzcwuwso.jpg" width=928.5 height=619 /></a>
-			<a id="photo3" name="photo3"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0832%202_zps3jsqewet.jpg" width=928.5 height=461.4 /></a>
-			<a id="photo4" name="photo4"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0567%202_zpstf1tmnla.jpg" width=928.5 height=527.8 /></a>
-			<a id="photo5" name="photo5"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0842%202_zps7zyuaxfo.jpg" width=428.3 height=619 /></a>
-			<a id="photo6" name="photo6"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0356%202_zpsabprjx0x.jpg" width=774.8 height=619 /></a>
-			<a id="photo7" name="photo7"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0561%204_zpsd3fwetis.jpg" width=414.4 height=619 /></a>
-			<a id="photo8" name="photo8"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0837%202_zpsxfi4dqbn.jpg" width=928.5 height=428.7 /></a>
-			<a id="photo9" name="photo9"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0357%202_zpsbq23i4ks.jpg" width=318.6.67 height=619 /></a>
-			<a id="photo10" name="photo10"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0846%202_zpsw5puc74r.jpg" width=354.3 height=619 /></a>
-			<a id="photo11" name="photo11"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0299%202_zpsdonem5g7.jpg" width=484.7 height=619 /></a>
-		</div>
-
+		<!-- Creating the sidebar that the photos on the right side of screen sit in. -->
 		<div class="sidebar"></div>
 
-		<div id="sidebar">			
-			<a id="sphoto1" href="#photo1"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0298%202_zpsnomnlqyf.jpg" width=52 height=34 /></a>
-			<a id="sphoto2" href="#photo2"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0903_zpsdzcwuwso.jpg" width=52 height=34 /></a>
-			<a id="sphoto3" href="#photo3"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0832%202_zps3jsqewet.jpg" width=52 height=25.8 /></a>
-			<a id="sphoto4" href="#photo4"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0567%202_zpstf1tmnla.jpg" width=52 height=29.6 /></a>
-			<a id="sphoto5" href="#photo5"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0842%202_zps7zyuaxfo.jpg" width=23.5 height=34 /></a>
-			<a id="sphoto6" href="#photo6"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0356%202_zpsabprjx0x.jpg" width=42.6 height=34 /></a>
-			<a id="sphoto7" href="#photo7"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0561%204_zpsd3fwetis.jpg" width=22.8 height=34 /></a>
-			<a id="sphoto8" href="#photo8"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0837%202_zpsxfi4dqbn.jpg" width=52 height=24 /></a>
-			<a id="sphoto9" href="#photo9"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0357%202_zpsbq23i4ks.jpg" width=17.5 height=34 /></a>
-			<a id="sphoto10" href="#photo10"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0846%202_zpsw5puc74r.jpg" width=19.5 height=34 /></a>
-			<a id="sphoto11" href="#photo11"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0299%202_zpsdonem5g7.jpg" width=26.6 height=34 /></a>
-		</div>
+		<button id="left" type="button"><img 
+					src="http://i.imgur.com/gRSqUuD.png" 
+					width=35 height=35 
+					/></button>
 
-		<div id="backrect"></div>
+		<button id="right" type="button"><img 
+					src="http://i.imgur.com/gRSqUuD.png" 
+					width=35 height=35 
+					/></button>	
+
+		<div id="sidephotosback"></div>
+
+		<ul id="sidephotos" style="list-style-type:none">			
+			<li><button class="buttons" id="button0" type="button">
+				<a id="sphoto1" href="#photo1">
+					<img src="http://i.imgur.com/muqHJDj.jpg" width=52 height=34 /></a>
+			</button></li>
+
+			<li><button class="buttons" id="button1" type="button">
+				<a id="sphoto2" href="#photo2">
+					<img src="http://i.imgur.com/fHPG5hy.jpg" width=52 height=34 />
+			</button></a></li>
+
+			<li><button class="buttons" id="button2" type="button">
+				<a id="sphoto3" href="#photo3">
+					<img src="http://i.imgur.com/Kvw4gNT.jpg" width=52 height=25.8 />
+			</button></a></li>
+
+			<li><button class="buttons" id="button3" type="button">
+				<a id="sphoto4" href="#photo4">
+					<img src="http://i.imgur.com/9DXbNMs.jpg" width=52 height=29.6 />
+			</button></a></li>
+
+			<li><button class="buttons" id="button4" type="button">
+				<a id="sphoto5" href="#photo5">
+					<img src="http://i.imgur.com/fZJlAfK.jpg" width=23.5 height=34 /></a>
+			</button></li>
+
+			<li><button class="buttons" id="button5" type="button">
+				<a id="sphoto6" href="#photo6">
+					<img src="http://i.imgur.com/VR4qNU7.jpg" width=42.6 height=34 /></a>
+			</button></li>
+
+			<li><button class="buttons"  id="button6" type="button">
+				<a id="sphoto7" href="#photo7">
+					<img src="http://i.imgur.com/TuhPNi9.jpg" width=22.8 height=34 /></a>
+			</button></li>
+
+			<li><button class="buttons"  id="button7" type="button">
+				<a id="sphoto8" href="#photo8">
+					<img src="http://i.imgur.com/QunmH4T.jpg" width=52 height=24 /></a>
+			</button></li>
+
+			<li><button class="buttons"  id="button8" type="button">
+				<a id="sphoto9" href="#photo9">
+					<img src="http://i.imgur.com/J2zFg5O.jpg" width=17.5 height=34 /></a>
+			</button></li>
+
+			<li><button class="buttons"  id="button9" type="button">
+				<a id="sphoto10" href="#photo10">
+					<img src="http://i.imgur.com/jyO8evQ.jpg" width=19.5 height=34 />
+			</button></a></li>
+
+			<li><button class="buttons"  id="button10" type="button">
+				<a id="sphoto11" href="#photo11">
+					<img src="http://i.imgur.com/aLbuNkh.jpg" width=26.6 height=34 /></a>
+			</button></li>
+		</ul>
+
+		<!-- Creating social media pics and links at bottom of each page -->
+		<footer id="connect">
+			<ul class="connectlist" style="list-style-type:none">
+				<li>
+					<a id="connect1" href="https://www.instagram.com/austingosch/" 
+					target="_blank">
+						<img src="https://i.imgur.com/r91dJG4.png" 
+							width=30 height=30 
+							alt="Instagram Link" />
+					</a>
+				</li>	
+				<li>
+					<a id="connect2" href="https://www.facebook.com/austin.gosch.5" 
+					target="_blank">
+						<img src="https://i.imgur.com/TlQdabF.png" 
+							width=30 height=30 
+							alt="Facebook Link" />
+					</a>
+				</li>	
+				<li>
+					<a id="connect3" href="https://www.linkedin.com/in/austin-gosch-39a64a107?trk=nav_responsive_tab_profile_pic" 
+					target="_blank">
+						<img src="https://i.imgur.com/HfPOyAJ.png" 
+							width=30 height=30
+							alt="Linkedin Link" />
+					</a>
+				</li>	
+				<li>
+					<a id="connect4">
+						<img src="https://i.imgur.com/wrhSoyH.png" 
+							width=30 height=30 
+							alt="Email Link" />
+					</a>
+				</li>	
+			</ul>
+		</footer>
+
+		<div id="date" ></div>
 
 	</body>
 </html>
