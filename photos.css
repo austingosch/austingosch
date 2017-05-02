@@ -111,22 +111,6 @@ a {
 	color: black;
 }
 
-/* Styling the text in the text class to be white */
-#textone, #texttwo, #textthree, #textfour {
-	color: white;
-	font-family: Open Sans;
-	font-size: 25px;
-	position: fixed;
-	z-index: 2;
-}
-
-#textboxone, #textboxtwo, #textboxthree, #textboxfour {
-	position: fixed;
-	background-color: gray;
-	opacity: .5;
-	z-index: 1;
-}
-
 /* Positioning the 4 text boxes and their gray backgrounds that overlay the nav photos */
 #textone {
 	top: 252px;
@@ -177,6 +161,22 @@ a {
 	left: 671px;
 	width: 220px;
 	height: 40px;
+}
+
+/* Styling the text in the text class to be white */
+#textone, #texttwo, #textthree, #textfour {
+	color: white;
+	font-family: Open Sans;
+	font-size: 25px;
+	position: fixed;
+	z-index: 2;
+}
+
+#textboxone, #textboxtwo, #textboxthree, #textboxfour {
+	position: fixed;
+	background-color: gray;
+	opacity: .5;
+	z-index: 1;
 }
 
 /* Changing the opacity of the textboxes when hovered upon */
