@@ -8,18 +8,47 @@
 		<meta name="keywords" content="photography">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+		<!-- Linking in Google JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
 		<!-- Linking HTML to CSS -->
 		<link rel="stylesheet" type="text/css" href="photos.css"/>
 
 		<!-- Proving a favicon for browser -->
-		<link rel="shortcut icon" href="http://i280.photobucket.com/albums/kk178/austingosch12/Pier_zpsjx0iqcu0.jpg?1432456902533&1432456903321" type="image/x-icon">
+		<link rel="shortcut icon" href="http://i.imgur.com/WDzYe4x.jpg" type="image/x-icon">
 
 		<!-- Loading fonts from Google Fonts needed for pages - load them to ensure that they can be accessed on any computer or browser -->
 		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
+		<script>
+		$(document).ready(function() {
+			// When you mouseover an image for navigation, the body's background changes to that image
+			$("#nav1").on("mouseover", function () {
+   				 $('body').css('background-image', 'url(http://i.imgur.com/7QcXDme.jpg)');
+			})
+
+			$("#nav2").on("mouseover", function () {
+   				 $('body').css('background-image', 'url(http://i.imgur.com/JfDehUC.jpg)');
+			})
+
+			$("#nav3").on("mouseover", function () {
+   				 $('body').css('background-image', 'url(http://i.imgur.com/2NHmLvz.jpg)');
+			})
+
+			$("#nav4").on("mouseover", function () {
+   				 $('body').css('background-image', 'url(http://i.imgur.com/MIDusbc.jpg)');
+			})
+
+			// Finding and printing date
+			var today = new Date();
+			$('#date').html(today.toDateString().substring(4,15));
+		});
+		</script>
+
 	</head>
 	<body>
+		<div id="date"></div>
 
 		<!-- Creating the title/logo on every page that links back to home page -->
 		<header>
@@ -39,37 +68,31 @@
 		<nav>
 			<ul class="nav" style="list-style-type:none">
 				<li><a class="link" id="navigation1" href="photos.html"><strong>PHOTOS</strong></a></li>
-				<li><a class="link" id="navigation2" href=""><strong>BLOG</strong></a></li>
+				<li><a class="link" id="navigation2" href="blog.html"><strong>BLOG</strong></a></li>
 				<li><a class="link" id="navigation3" href="aboutme.html"><strong>ME</strong></a></li>
 			</ul>
 		</nav>
 
-		<!-- Creating the table that the 4 pictures sit in for nav -->
-		<table id="photogrid" cellspacing="22">
-			<tr>
-	    		<td><a id="gridone" href="landscape.html"><img src="https://i.imgur.com/mU09wBr.jpg" width=220 height=220 /></a></td>
-	    		<td><a id="gridtwo" href="animals.html"><img src="https://i.imgur.com/1sFoObh.jpg" width=220 height=220 /></a></td> 
-	  		</tr>
-	  		<tr>
-	    		<td><a id="gridthree" href="people.html"><img src="https://i.imgur.com/rnMJ8qp.jpg" width=220 height=220 /></a></td>
-	    		<td><a id="gridfour" href="other.html"><img src="https://i.imgur.com/Cj8h3qm.jpg" width=220 height=220 /></a></td> 
-	  		</tr>
-		</table>
+		<!-- Creating the 4 pictures for nav -->
+		<a id="nav1" href="landscape.html" ></a>
+	    <a id="nav2" href="animals.html" ></a>
+	  	<a id="nav3" href="people.html" ></a>
+	    <a id="nav4" href="other.html" ></a> 
 
 		<!-- Creating the text boxes and text that sit in them -->
-			<div class="textboxes">
-				<a href="landscape.html"><div id="textboxone"></div></a>
-				<a href="animals.html"><div id="textboxtwo"></div></a>
-				<a href="people.html"><div id="textboxthree"></div></a>
-				<a href="other.html"><div id="textboxfour"></div></a>
-			</div>
+		<div class="textboxes">
+			<a href="landscape.html"><div id="textboxone"></div></a>
+			<a href="animals.html"><div id="textboxtwo"></div></a>
+			<a href="people.html"><div id="textboxthree"></div></a>
+			<a href="other.html"><div id="textboxfour"></div></a>
+		</div>
 
-			<nav class="text">
-				<a href="landscape.html"><div id="textone">LANDSCAPES</div></a>
-				<a href="animals.html"><div id="texttwo">ANIMALS</div></a>
-				<a href="people.html"><div id="textthree">PEOPLE</div></a>
-				<a href="other.html"><div id="textfour">OTHER</div></a>
-			</nav>
+		<nav class="text">
+			<a href="landscape.html"><div id="textone">LANDSCAPES</div></a>
+			<a href="animals.html"><div id="texttwo">ANIMALS</div></a>
+			<a href="people.html"><div id="textthree">PEOPLE</div></a>
+			<a href="other.html"><div id="textfour">OTHER</div></a>
+		</nav>
 
 		<!-- Creating social media pics and links at bottom of each page -->
 		<footer id="connect">
