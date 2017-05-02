@@ -26,18 +26,18 @@
 			// Centering photos nav regardless of screen size
 			var windowWidth = $(window).width();
 			var windowHeight = $(window).height();
-			
-			alert('hi');
-						
+
+			alert(windowWidth + ' x ' + windowHeight);
+
 			$('#button100').click(function() {
-				$("#nav1").css({'left': windowWidth / 2 - 213,
-						'top': windowHeight / 2 - 207.5});
-				$("#nav2").css({'left': windowWidth / 2 + 31,
-						'top': windowHeight / 2 - 207.5});
-				$("#nav3").css({'left': windowWidth / 2 - 213,
-						'top': windowHeight / 2 + 36.5});
-				$("#nav4").css({'left': windowWidth / 2 + 31,
-						'top': windowHeight / 2 + 36.5});
+				$('#nav1', '#textone', '#textboxone').css({'left': windowWidth / 2 - 213,
+								'top': windowHeight / 2 - 207.5});
+				$('#nav2', '#texttwo', '#textboxtwo').css({'left': windowWidth / 2 + 31,
+								'top': windowHeight / 2 - 207.5});
+				$('#nav3', '#textthree', '#textboxthree').css({'left': windowWidth / 2 - 213,
+								'top': windowHeight / 2 + 36.5});
+				$('#nav4', '#textfour', '#textboxfour').css({'left': windowWidth / 2 + 31,
+								'top': windowHeight / 2 + 36.5});
 			});
 
 			// When you mouseover an image for navigation, the body's background changes to that image
