@@ -8,6 +8,9 @@
 		<meta name="keywords" content="photography">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+		<!-- Linking in Google JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
 		<!-- Linking HTML to CSS -->
 		<link rel="stylesheet" type="text/css" href="index.css"/>
 
@@ -24,8 +27,63 @@
 			}
 		</style>
 
+		<!-- Internal JavaScript -->
+		<script>
+			var backgrounds = [
+					'http://i.imgur.com/WDzYe4x.jpg',
+					'http://i.imgur.com/NYi3Ffk.jpg',
+					'https://i.imgur.com/NeC2E3x.jpg',
+					'https://i.imgur.com/QIjQaoH.jpg',
+			];
+
+			// When you click on the images in the sidebar, the body's background changes to that image
+			$(document).ready(function() {
+				var i = 0;
+
+				$('#button1').click(function() {
+					$('body').css('background-image', 'url(http://i.imgur.com/WDzYe4x.jpg)');
+					i = 1;
+				});
+
+				$('#button2').click(function() {
+					$('body').css('background-image', 'url(http://i.imgur.com/NYi3Ffk.jpg)');
+					i = 2;
+				});
+
+				$('#button3').click(function() {
+					$('body').css('background-image', 'url(https://i.imgur.com/NeC2E3x.jpg)');
+					i = 3;
+				});
+
+				$('#button4').click(function() {
+					$('body').css('background-image', 'url(https://i.imgur.com/QIjQaoH.jpg)');
+					i = 4;
+				});
+
+				$(function() {
+					function nextBackground() {
+						if ( i == 4) {
+							i = 0;
+						}
+
+						$('body').css('background-image', 'url(' + backgrounds[i] + ')');
+
+						setTimeout(nextBackground, 6000);
+						i++;
+					};
+
+					setTimeout(nextBackground, 1);
+					$('body').css('background-image', 'url(' + backgrounds[0] + ')');
+				});
+
+				// Finding and printing date
+				var today = new Date();
+				$('#date').html(today.toDateString().substring(4,15));
+			});
+		</script>
+
 		<!-- Proving a favicon for browser -->
-		<link rel="shortcut icon" href="http://i280.photobucket.com/albums/kk178/austingosch12/Pier_zpsjx0iqcu0.jpg?1432456902533&1432456903321" type="image/x-icon">
+		<link rel="shortcut icon" href="http://i.imgur.com/WDzYe4x.jpg" type="image/x-icon">
 
 		<!-- Loading fonts from Google Fonts needed for pages - load them to ensure that they can be accessed on any computer or browser -->
 		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic' rel='stylesheet' type='text/css'>
@@ -33,7 +91,7 @@
 
 	</head>
 	<body>
-
+		
 		<!-- Creating the title/logo on every page that links back to home page -->
 		<header>
 			<ul class="header" style="list-style-type:none">
@@ -52,7 +110,7 @@
 		<nav>
 			<ul class="nav" style="list-style-type:none">
 				<li><a class="link" id="navigation1" href="photos.html"><strong>PHOTOS</strong></a></li>
-				<li><a class="link" id="navigation2" href=""><strong>BLOG</strong></a></li>
+				<li><a class="link" id="navigation2" href="blog.html"><strong>BLOG</strong></a></li>
 				<li><a class="link" id="navigation3" href="aboutme.html"><strong>ME</strong></a></li>
 			</ul>
 		</nav>
@@ -63,22 +121,22 @@
 		<!-- Loading images that sit in sidebar on right side of screen -->
 	 	<aside>
 	 		<ul class="sidepics" style="list-style-type:none">	
-				<li><img id="sidebar1" 
-					src="https://i.imgur.com/mU09wBr.jpg" 
-					width=230 height=155 
-					alt="Newport Beach Pier" /></li>
-				<li><img id="sidebar2" 
-					src="https://i.imgur.com/pKkFYHc.jpg" 
+				<li><button id="button1" type="button"><img id="sidebar1" 
+					src="http://i.imgur.com/WDzYe4x.jpg" 
 					width=230 height=153 
-					alt="Colored Water Splashes" /></li>
-				<li><img id="sidebar3" 
+					alt="Newport Beach Pier" /></button></li>
+				<li><button id="button2" type="button"><img id="sidebar2" 
+					src="http://i.imgur.com/NYi3Ffk.jpg" 
+					width=230 height=153 
+					alt="Colored Water Splashes" /></button></li>
+				<li><button id="button3" type="button"><img id="sidebar3" 
 					src="https://i.imgur.com/NeC2E3x.jpg" 
 					width=230 height=145 
-					alt="Angel's Landing View" /></li>
-				<li><img id="sidebar4" 
+					alt="Angel's Landing View" /></button></li>
+				<li><button id="button4" type="button"><img id="sidebar4" 
 					src="https://i.imgur.com/QIjQaoH.jpg" 
 					width=230 height=125 
-					alt="Crystal Cove Beach" /></li>
+					alt="Crystal Cove Beach" /></button></li>
 			</ul>
 		</aside>	
 
@@ -118,6 +176,8 @@
 				</li>	
 			</ul>
 		</footer>
+
+		<div id="date" ></div>
 
 	</body>
 </html>
