@@ -27,7 +27,7 @@
 			var windowSize = $(window).width();
 			alert(windowSize);
 
-			$(function() {
+			$('body').click(function() {
 				$("#nav1", "#nav3").css('width', windowSize/2 - 213);
 				$("#nav2", "#nav4").css('width', windowSize/2 + 31);
 			});
