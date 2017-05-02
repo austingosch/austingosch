@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://i.imgur.com/NYi3Ffk.jpg");
+    background-image: url("http://i.imgur.com/WDzYe4x.jpg");
     -webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -79,7 +79,7 @@ a {
 	font-weight: bold;
 	font-family: Open Sans;
 	text-align: left;
-	color: white;
+	text-decoration: none;
 }
 
 /* Individual placement of navigation menu pieces */
@@ -87,6 +87,7 @@ a {
 	position: absolute;
 	top: 15px;
 	left: 172px;
+	color: white;
 }
 
 /* ^^ */
@@ -94,6 +95,7 @@ a {
 	position: absolute;
 	top: 35px;
 	left: 172px;
+	color: white;
 }
 
 /* ^^ */
@@ -101,6 +103,7 @@ a {
 	position: absolute;
 	top: 55px;
 	left: 172px;
+	color: white;
 }
 
 /* Making hover action for navigation menu */
@@ -181,22 +184,61 @@ a {
 	opacity: 1;
 }
 
-/* Styling the table/grid the photos are in for nav */
-#photogrid {
+/* Styling the navigation pictures */
+#nav1 {
 	position: fixed;
-	top: 60px;
-	left: 405px;
+	top: 100px;
+	left: 427px;
+	width: 220px;
+	height: 220px;
+	background-image: url("https://i.imgur.com/mU09wBr.jpg");
+	background-size: cover;
+}
+
+#nav2 {
+	position: fixed;
+	top: 100px;
+	left: 671px;
+	width: 220px;
+	height: 220px;
+	background-image: url("https://i.imgur.com/1sFoObh.jpg");
+	background-size: cover;
+}
+
+#nav3 {
+	position: fixed;
+	top: 344px;
+	left: 427px;
+	width: 220px;
+	height: 220px;
+	background-image: url("https://i.imgur.com/rnMJ8qp.jpg");
+	background-size: cover;
+}
+
+#nav4 {
+	position: fixed;
+	top: 344px;
+	left: 671px;
+	width: 220px;
+	height: 220px;
+	background-image: url("https://i.imgur.com/Cj8h3qm.jpg");
+	background-size: cover;
 }
 
 /* Having opacity of pictures in table/grid decrease when hovered upon */
-#gridone:hover, #gridtwo:hover, #gridthree:hover, #gridfour:hover {
+#nav1:hover, #nav2:hover, #nav3:hover, #nav4:hover {
 	opacity: .6;
-}
+	/*top: 100px;
+	left: 427px;
+	width: 464px;
+	height: 464px;
+	z-index: 1; */
+} 
 
 /* Placing the connections in bottom left of page */
 #connect {
 	position: fixed;
-	top: 550px;
+	top: 525px;
 	left: -15px;
 }
 
@@ -208,4 +250,15 @@ a {
 /* Making hover action for connections */
 #connect1:hover, #connect2:hover, #connect3:hover, #connect4:hover {
 	opacity: .1;
+}
+
+/* Styling the date calculated by JQuery */
+#date {
+	position: absolute;
+	top: 574px;
+	left: 30px;
+	font-size: 20px;
+	font-family: Open Sans;
+	color: white;
+	opacity: .8;
 }
