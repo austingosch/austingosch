@@ -1,84 +1,236 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="other.css">
-		<title>nature.html</title>
+body {
+	background-color: white;
+}
 
-	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+/* Setting all links to no text decoration */
+a {
+	text-decoration: none;
+}
 
-	</head>
-	<body>
-		<div>
-			<h1 class="headerone">
-				<a class="aus" href="index.html">AUS</a>
-				<a class="tin" href="index.html">TIN.</a>
-				<a class="go" href="index.html">GO</a>
-				<a class="sch" href="index.html">SCH.</a>
-				<a class="photography" href="index.html">photography</a>
+/*Setting specific link class to color white after being visted */
+.link:visited {
+	color: black;
+}
 
-				<div class="line" href="index.html"></div>
+/* Styling the logo header */
+.header {
+	font-family: Open Sans;
+	text-align: left;
+	font-weight: 800;
+	font-size: 65px;
+	color: black;
+	opacity: .3;
+}
 
-				<a class="navigation1" href="landscape.html">LANDSCAPE</a>
-				<a class="navigation2" href="animals.html">ANIMALS</a>
-				<a class="navigation3" href="people.html">PEOPLE</a>
-				<a class="navigation4" href="other.html">OTHER</a>
+/* Individual placement of logo header pieces */
+#aus {
+	position: fixed;
+	top: 0px;
+	left: 20px; 
+}
 
-				<div class="sidebar"></div>
-			</h1>
-		</div>
+/* ^^ */
+#tin {
+	position: fixed;
+	top: 55px;
+	left: 20px;
+}
 
-		<a href="#top">
-			<div id="toparrow">
-				<img src="http://i280.photobucket.com/albums/kk178/austingosch12/up-arrow-circle-hi_zpspvhv21d2.png" width=35 height=35>
-			</div>
-		</a>
+/* ^^ */
+#go {
+	position: fixed;
+	top: 128px;
+	left: 20px;	
+}
 
-		<div id="connections">
-			<a id="connection1" href="https://www.instagram.com/austingosch/" target="_blank"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/cutmypic%201_zpsjcopuz1a.png" width=30 height=30></a>
-			<a id="connection2" href="https://www.facebook.com/austin.gosch.5" target="_blank"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/cutmypic_zpsxxxq3kxe.png" width=30 height=30></a>
-			<a id="connection3" href="https://www.linkedin.com/in/austin-gosch-39a64a107?trk=nav_responsive_tab_profile_pic" target="_blank"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/cutmypic%202_zpspw23tvba.png" width=30 height=30></a>
-			<a id="connection4"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/cutmypic%203_zpsxa5mwxau.png" width=30 height=30></a>
-		</div>
+/* ^^ */
+#sch {
+	position: fixed;
+	top: 183px;
+	left: 23px;	
+}
 
-		<div id="photos">
-			<a id="photo1" name="photo1"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/other%20grid_zpsa1mskczk.jpg" width=619 height=619 /></a>
-			<a id="photo2" name="photo2"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/pjimage_zpslcu7wogc.jpg" width=928.5 height=600.3 /></a>
-			<a id="photo3" name="photo3"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0347%20copy_zps8uaryenh.jpg" width=619 height=619 /></a>
-			<a id="photo4" name="photo4"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0665%203_zpsqr5uslmt.jpg" width=928.5 height=619 /></a>
-			<a id="photo5" name="photo5"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0583%202_zpswqdfwhvw.jpg" width=928.5 height=619 /></a>
-			<a id="photo6" name="photo6"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/Feather_zpshoux2w5c.jpg" width=412.7 height=619 /></a>
-			<a id="photo7" name="photo7"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/Maypop_zpsxsxg2d4l.jpg" width=412.4 height=619 /></a>
-			<a id="photo8" name="photo8"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0383%20copy_zpsbim7n3op.jpg" width=584.7 height=619 /></a>
-			<a id="photo9" name="photo9"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0389%202_zpsnnug6ei1.jpg" width=928.5 height=490.4 /></a>
-			<a id="photo10" name="photo10"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_1358%203_zps4e7i1acv.jpg" width=611.6 height=619 /></a>
-			<a id="photo11" name="photo11"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/Telescope_zpsmfp6lamq.jpg" width=412.7 height=619 /></a>
-			<a id="photo11" name="photo12"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0469%202_zpsheq7wwkn.jpg" width=928.5 height=619 /></a>
-			<a id="photo11" name="photo13"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0844%20copy_zpsn9j0nkhg.jpg" width=522.6 height=619 /></a>
-			<a id="photo11" name="photo14"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0362%202_zps0f7utcdt.jpg" width=484.7 height=619 /></a>
-			<a id="photo11" name="photo15"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0397_zpscaj1hc1k.jpg" width=928.5 height=537 /></a>
-		</div>
+/* ^^ */
+#photography {
+	position: fixed;
+	top: 250px;
+	left: 27px;
+	font-size: 22px; 	
+}
 
-		<div class="sidebar"></div>
+/* ^^ */
+#line {
+	position: fixed;
+	top: 135px;
+	left: 20px;
+	height: 4px;
+	width: 137px;
+	background-color: black;
+}
 
-		<div id="sidebar">			
-			<a id="sphoto1" href="#photo1"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/other%20grid_zpsa1mskczk.jpg" width=34 height=34 /></a>
-			<a id="sphoto2" href="#photo2"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/pjimage_zpslcu7wogc.jpg" width=52 height=33.6 /></a>
-			<a id="sphoto4" href="#photo4"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0665%203_zpsqr5uslmt.jpg" width=52 height=34 /></a>
-			<a id="sphoto5" href="#photo5"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0583%202_zpswqdfwhvw.jpg" width=52 height=34 /></a>
-			<a id="sphoto6" href="#photo6"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/Feather_zpshoux2w5c.jpg" width=22.7 height=34 /></a>
-			<a id="sphoto7" href="#photo7"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/Maypop_zpsxsxg2d4l.jpg" width=22.7 height=34 /></a>
-			<a id="sphoto8" href="#photo8"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0383%20copy_zpsbim7n3op.jpg" width=32.1 height=34 /></a>
-			<a id="sphoto9" href="#photo9"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0389%202_zpsnnug6ei1.jpg" width=52 height=27.5 /></a>
-			<a id="sphoto10" href="#photo10"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_1358%203_zps4e7i1acv.jpg" width=33.6 height=34 /></a>
-			<a id="sphoto11" href="#photo11"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/Telescope_zpsmfp6lamq.jpg" width=22.7 height=34 /></a>
-			<a id="sphoto12" href="#photo12"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0469%202_zpsheq7wwkn.jpg" width=52 height=34 /></a>
-			<a id="sphoto13" href="#photo13"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0844%20copy_zpsn9j0nkhg.jpg" width=28.7 height=34 /></a>
-			<a id="sphoto14" href="#photo14"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0362%202_zps0f7utcdt.jpg" width=26.6 height=34 /></a>
-			<a id="sphoto15" href="#photo15"><img src="http://i280.photobucket.com/albums/kk178/austingosch12/DSC_0397_zpscaj1hc1k.jpg" width=52 height=30.1 /></a>
-		</div>
+/* Styling the navigation menu */
+.nav {
+	font-size: 20px;
+	text-align: left;
+	font-weight: bold;
+	font-family: Open Sans;
+	text-align: left;
+	text-decoration: none;
+}
 
-		<div id="backrect"></div>
+/* Individual placement of navigation menu pieces */
+#navigation1 {
+	position: fixed;
+	top: 310px;
+	left: 25px;
+	color: black;
+	opacity: .3;
+}
 
-	</body>
-</html>
+/* ^^ */
+#navigation2 {
+	position: fixed;
+	top: 330px;
+	left: 25px;
+	color: black;
+	opacity: .3;
+}
+
+/* ^^ */
+#navigation3 {
+	position: fixed;
+	top: 350px;
+	left: 25px;
+	color: black;
+	opacity: .3;
+}
+
+/* Making hover action for navigation menu */
+#navigation1:hover, #navigation2:hover, #navigation3:hover {
+	opacity: .99;
+}
+
+#backrect {
+	position: absolute;
+	top: 0px;
+	left: 172px;
+	width: 929px;
+	height: 615px;
+
+	background-image: url('http://i.imgur.com/MIDusbc.jpg');
+	background-size: cover;
+}
+
+.cycle {
+    position: relative;
+    height: 320px;
+    width: 320px;
+}
+
+.cycle img {
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+
+#photos {
+	position: absolute;
+	top: 619px;
+	left: 132px;
+	width: 929px;
+
+	text-align: center;
+	z-index: 2;
+}
+
+#left {
+	position: fixed;
+	top: 450px;
+	left: 45px;
+	transform: rotate(-90deg);
+	
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+#right {
+	position: fixed;
+	top: 450px;
+	left: 85px;
+	transform: rotate(90deg);
+	
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+#left:hover, #right:hover {
+	opacity: .3;
+}
+
+/* Placing the connections in bottom left of page */
+#connect {
+	position: fixed;
+	top: 525px;
+	left: -18px;
+}
+
+/* Making connections horrizonal, inline list rather than vertical */
+.connectlist li {
+	display: inline;
+}
+
+/* Making hover action for connections */
+#connect1:hover, #connect2:hover, #connect3:hover, #connect4:hover {
+	opacity: .1;
+}
+
+/* Styling the date calculated by JQuery */
+#date {
+	position: absolute;
+	top: 574px;
+	left: 30px;
+	font-size: 20px;
+	font-family: Open Sans;
+	color: gray;
+	opacity: .8;
+}
+
+#sidephotosback {
+	position: fixed;
+	top: 0px;
+	left: 1140px;
+	height: 619px;
+	width: 85px;
+
+	background-color: gray;
+	opacity: .3;
+}
+
+#sidephotos {
+	position: fixed;
+	top: 5px;
+	left: 1107px;
+
+	text-align: center;
+}
+
+.buttons {
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+#sphoto1:hover, #sphoto2:hover, #sphoto3:hover, #sphoto4:hover, #sphoto5:hover, #sphoto6:hover, #sphoto7:hover, #sphoto8:hover, #sphoto9:hover, #sphoto10:hover, #sphoto11:hover, #sphoto12:hover, #sphoto13:hover, #sphoto14:hover, #sphoto15:hover {
+	opacity: .4;
+}
