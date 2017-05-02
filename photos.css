@@ -111,6 +111,11 @@ a {
 	color: black;
 }
 
+/* Centering the photos not matter the screen size */
+.photosNav {
+	margin: 0 auto;
+}
+
 /* Positioning the 4 text boxes and their gray backgrounds that overlay the nav photos */
 #textone {
 	top: 252px;
@@ -184,16 +189,11 @@ a {
 	opacity: 1;
 }
 
-/* Centering the photos not matter the screen size */
-.photosNav {
-	margin: 0 auto;
-}
-
 /* Styling the navigation pictures */
 #nav1 {
 	position: fixed;
 	top: 100px;
-	left: 427px;
+	left: 1000px;
 	width: 220px;
 	height: 220px;
 	background-image: url("https://i.imgur.com/mU09wBr.jpg");
