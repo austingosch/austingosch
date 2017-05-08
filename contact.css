@@ -122,7 +122,6 @@ a {
 
 	width: 350px;
 	margin: 0 auto;
-	opacity: .8;
 }
 
 #contactUs {
@@ -186,7 +185,23 @@ span {
 
 	margin: 0 auto;
 
-	width: 50%;
+	position: relative;
+	top: 135px;
+	width: 55%;
+}
+
+#redirect {
+	color: white;
+	font-family: Open Sans;
+	font-style: bold;
+	font-size: 30px;
+	text-align: center;
+
+	margin: 0 auto;
+
+	position: relative;
+	top: 155px;
+	width: 55%;
 }
 
 /* Placing the connections in bottom left of page */
