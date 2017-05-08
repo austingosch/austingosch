@@ -1,6 +1,19 @@
 body {
     background-image: url("http://i.imgur.com/WDzYe4x.jpg");
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
   	background-size: cover;
+}
+
+/* Setting all links to no text decoration */
+a {
+	text-decoration: none;
+}
+
+/*Setting specific link class to color white after being visted */
+.link:visited {
+	color: white;
 }
 
 /* Styling the logo header */
@@ -12,6 +25,7 @@ body {
 
 	color: white;
 	opacity: .4;
+	text-decoration: none;
 }
 
 /* Individual placement of logo header pieces */
@@ -104,7 +118,7 @@ body {
 	position: fixed;
 	top: 0px;
 	left: 950px;
-	height: 619px;
+	height: 100%;
 	width: 250px;
 
 	background-color: gray;
@@ -153,10 +167,13 @@ button:hover {
 }
 
 /* Placing the connections in bottom left of page */
-#connect {
+#footer {
 	position: fixed;
 	top: 525px;
-	left: -18px;
+	left: -32px;
+	width: 200px;
+	height: 100%;	
+	text-align: center;
 }
 
 /* Making connections horrizonal, inline list rather than vertical */
@@ -171,7 +188,7 @@ button:hover {
 
 /* Styling the date calculated by JQuery */
 #date {
-	position: absolute;
+	position: fixed;
 	top: 574px;
 	left: 30px;
 	font-size: 20px;
