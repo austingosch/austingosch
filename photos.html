@@ -57,23 +57,6 @@
 						  	 'top': windowHeight / 2 + 191.5});
 			});
 
-			// When you mouseover an image for navigation, the body's background changes to that image
-			$("#nav1").on("mouseover", function () {
-   				 $('body').css('background-image', 'url(http://i.imgur.com/7QcXDme.jpg)');
-			})
-
-			$("#nav2").on("mouseover", function () {
-   				 $('body').css('background-image', 'url(http://i.imgur.com/JfDehUC.jpg)');
-			})
-
-			$("#nav3").on("mouseover", function () {
-   				 $('body').css('background-image', 'url(http://i.imgur.com/2NHmLvz.jpg)');
-			})
-
-			$("#nav4").on("mouseover", function () {
-   				 $('body').css('background-image', 'url(http://i.imgur.com/MIDusbc.jpg)');
-			})
-
 			// Finding and printing date
 			var today = new Date();
 			$('#date').html(today.toDateString().substring(4,15));
@@ -82,9 +65,6 @@
 
 	</head>
 	<body>
-		<button id="button100" type="button"></button>
-		<div id="date"></div>
-
 		<!-- Creating the title/logo on every page that links back to home page -->
 		<header>
 			<ul class="header" style="list-style-type:none">
@@ -110,10 +90,10 @@
 
 		<!-- Creating the 4 pictures for nav -->
 		<div class='photosNav'>
-			<a id="nav1" href="landscape.html" ></a>
-		    <a id="nav2" href="animals.html" ></a>
-		  	<a id="nav3" href="people.html" ></a>
-		    <a id="nav4" href="other.html" ></a> 
+			<a id="nav1" href="landscape.html" onmouseenter="switch(this, 'nav1')" onmouseleave="switchBack(this)"></a>
+		    <a id="nav2" href="animals.html" onmouseenter="switch(this, 'nav2')" onmouseleave="switchBack(this)"></a>
+		  	<a id="nav3" href="people.html" onmouseenter="switch(this, 'nav3')" onmouseleave="switchBack(this)"></a>
+		    <a id="nav4" href="other.html" onmouseenter="switch(this, 'nav4')" onmouseleave="switchBack(this)"></a> 
 
 
 			<!-- Creating the text boxes and text that sit in them -->
@@ -133,7 +113,7 @@
 		</div>
 
 		<!-- Creating social media pics and links at bottom of each page -->
-		<footer id="connect">
+		<footer id="footer">
 			<ul class="connectlist" style="list-style-type:none">
 				<li>
 					<a id="connect1" href="https://www.instagram.com/austingosch/" 
@@ -154,19 +134,22 @@
 				<li>
 					<a id="connect3" href="https://www.linkedin.com/in/austin-gosch-39a64a107?trk=nav_responsive_tab_profile_pic" 
 					target="_blank">
-						<img src="https://i.imgur.com/HfPOyAJ.png" 
+						<img src="https://i.imgur.com/wrhSoyH.png" 
 							width=30 height=30
 							alt="Linkedin Link" />
 					</a>
 				</li>	
 				<li>
-					<a id="connect4">
-						<img src="https://i.imgur.com/wrhSoyH.png" 
+					<a id="connect4" href="contact.html">
+						<img src="https://i.imgur.com/HfPOyAJ.png" 
 							width=30 height=30 
-							alt="Email Link" />
+							alt="Contact Link" />
 					</a>
 				</li>	
 			</ul>
+
+			<div id="date" ></div>
+
 		</footer>
 
 	</body>
