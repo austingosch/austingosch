@@ -3,7 +3,7 @@
 	<head>
 
 		<!-- Webpage information for the computer to identify page -->
-		<title>Photo Nav</title>
+		<title>People</title>
 		<meta name="author" content="Austin Gosch">
 		<meta name="keywords" content="photography">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +11,10 @@
 		<!-- Linking in Google JQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
+		<script type="text/javascript" src="people.js"></script>
+
 		<!-- Linking HTML to CSS -->
-		<link rel="stylesheet" type="text/css" href="photos.css"/>
+		<link rel="stylesheet" type="text/css" href="people.css">
 
 		<!-- Proving a favicon for browser -->
 		<link rel="shortcut icon" href="http://i.imgur.com/WDzYe4x.jpg" type="image/x-icon">
@@ -21,50 +23,9 @@
 		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
-		<script>
-		$(document).ready(function() {
-			// Centering photos nav regardless of screen size
-			var windowWidth = $(window).width();
-			var windowHeight = $(window).height();
-
-			$('#button100').click(function() {
-				$('#nav1').css({'left': windowWidth / 2 - 213,
-						'top': windowHeight / 2 - 207.5});
-					$('#textone').css({'left': windowWidth / 2 - 190,
-						   	'top': windowHeight / 2 - 55.5});
-					$('#textboxone').css({'left': windowWidth / 2 - 213,
-							   'top': windowHeight / 2 - 57.5});
-				
-				$('#nav2').css({'left': windowWidth / 2 + 31,
-						'top': windowHeight / 2 - 207.5});
-					$('#texttwo').css({'left': windowWidth / 2 + 54,
-							   'top': windowHeight / 2 - 57.5});
-					$('#textboxtwo').css({'left': windowWidth / 2 + 31 ,
-							   'top': windowHeight / 2 - 57.5});
-				
-				$('#nav3').css({'left': windowWidth / 2 - 213,
-						'top': windowHeight / 2 + 36.5});
-					$('#textthree').css({'left': windowWidth / 2 - 190,
-							   'top': windowHeight / 2 + 193.5});
-					$('#textboxthree').css({'left': windowWidth / 2 - 168,
-							   'top': windowHeight / 2 + 191.5});
-				
-				$('#nav4').css({'left': windowWidth / 2 + 31,
-						'top': windowHeight / 2 + 36.5});
-					$('#textfour').css({'left': windowWidth / 2 + 54,
-						 	  'top': windowHeight / 2 + 193});
-					$('#textboxfour').css({'left': windowWidth / 2 + 31,
-						  	 'top': windowHeight / 2 + 191.5});
-			});
-
-			// Finding and printing date
-			var today = new Date();
-			$('#date').html(today.toDateString().substring(4,15));
-		});
-		</script>
-
 	</head>
 	<body>
+
 		<!-- Creating the title/logo on every page that links back to home page -->
 		<header>
 			<ul class="header" style="list-style-type:none">
@@ -88,29 +49,79 @@
 			</ul>
 		</nav>
 
-		<!-- Creating the 4 pictures for nav -->
-		<div class='photosNav'>
-			<a id="nav1" href="landscape.html" onmouseenter="switch(this, 'nav1')" onmouseleave="switchBack(this)"></a>
-		    <a id="nav2" href="animals.html" onmouseenter="switch(this, 'nav2')" onmouseleave="switchBack(this)"></a>
-		  	<a id="nav3" href="people.html" onmouseenter="switch(this, 'nav3')" onmouseleave="switchBack(this)"></a>
-		    <a id="nav4" href="other.html" onmouseenter="switch(this, 'nav4')" onmouseleave="switchBack(this)"></a> 
+		<div id='backrect'></div>
 
+		<!-- Creating the sidebar that the photos on the right side of screen sit in. -->
+		<div class="sidebar"></div>
 
-			<!-- Creating the text boxes and text that sit in them -->
-			<div class="textboxes">
-				<a href="landscape.html"><div id="textboxone"></div></a>
-				<a href="animals.html"><div id="textboxtwo"></div></a>
-				<a href="people.html"><div id="textboxthree"></div></a>
-				<a href="other.html"><div id="textboxfour"></div></a>
-			</div>
+		<button id="left" type="button"><img 
+					src="http://i.imgur.com/gRSqUuD.png" 
+					width=35 height=35 
+					/></button>
 
-			<nav class="text">
-				<a href="landscape.html"><div id="textone">LANDSCAPES</div></a>
-				<a href="animals.html"><div id="texttwo">ANIMALS</div></a>
-				<a href="people.html"><div id="textthree">PEOPLE</div></a>
-				<a href="other.html"><div id="textfour">OTHER</div></a>
-			</nav>
-		</div>
+		<button id="right" type="button"><img 
+					src="http://i.imgur.com/gRSqUuD.png" 
+					width=35 height=35 
+					/></button>	
+
+		<div id="sidephotosback"></div>
+
+		<ul id="sidephotos" style="list-style-type:none">			
+			<li><button class="buttons" id="button0" type="button">
+				<a id="sphoto1" href="#photo1">
+					<img src="http://i.imgur.com/muqHJDj.jpg" width=52 height=34 /></a>
+			</button></li>
+
+			<li><button class="buttons" id="button1" type="button">
+				<a id="sphoto2" href="#photo2">
+					<img src="http://i.imgur.com/fHPG5hy.jpg" width=52 height=34 />
+			</button></a></li>
+
+			<li><button class="buttons" id="button2" type="button">
+				<a id="sphoto3" href="#photo3">
+					<img src="http://i.imgur.com/Kvw4gNT.jpg" width=52 height=25.8 />
+			</button></a></li>
+
+			<li><button class="buttons" id="button3" type="button">
+				<a id="sphoto4" href="#photo4">
+					<img src="http://i.imgur.com/9DXbNMs.jpg" width=52 height=29.6 />
+			</button></a></li>
+
+			<li><button class="buttons" id="button4" type="button">
+				<a id="sphoto5" href="#photo5">
+					<img src="http://i.imgur.com/fZJlAfK.jpg" width=23.5 height=34 /></a>
+			</button></li>
+
+			<li><button class="buttons" id="button5" type="button">
+				<a id="sphoto6" href="#photo6">
+					<img src="http://i.imgur.com/VR4qNU7.jpg" width=42.6 height=34 /></a>
+			</button></li>
+
+			<li><button class="buttons"  id="button6" type="button">
+				<a id="sphoto7" href="#photo7">
+					<img src="http://i.imgur.com/TuhPNi9.jpg" width=22.8 height=34 /></a>
+			</button></li>
+
+			<li><button class="buttons"  id="button7" type="button">
+				<a id="sphoto8" href="#photo8">
+					<img src="http://i.imgur.com/QunmH4T.jpg" width=52 height=24 /></a>
+			</button></li>
+
+			<li><button class="buttons"  id="button8" type="button">
+				<a id="sphoto9" href="#photo9">
+					<img src="http://i.imgur.com/J2zFg5O.jpg" width=17.5 height=34 /></a>
+			</button></li>
+
+			<li><button class="buttons"  id="button9" type="button">
+				<a id="sphoto10" href="#photo10">
+					<img src="http://i.imgur.com/jyO8evQ.jpg" width=19.5 height=34 />
+			</button></a></li>
+
+			<li><button class="buttons"  id="button10" type="button">
+				<a id="sphoto11" href="#photo11">
+					<img src="http://i.imgur.com/aLbuNkh.jpg" width=26.6 height=34 /></a>
+			</button></li>
+		</ul>
 
 		<!-- Creating social media pics and links at bottom of each page -->
 		<footer id="footer">
