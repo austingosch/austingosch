@@ -39,26 +39,7 @@
 			// When you click on the images in the sidebar, the body's background changes to that image
 			$(document).ready(function() {
 				var i = 0;
-
-				$('#button1').click(function() {
-					$('body').css('background-image', 'url(http://i.imgur.com/WDzYe4x.jpg)');
-					i = 1;
-				});
-
-				$('#button2').click(function() {
-					$('body').css('background-image', 'url(http://i.imgur.com/NYi3Ffk.jpg)');
-					i = 2;
-				});
-
-				$('#button3').click(function() {
-					$('body').css('background-image', 'url(https://i.imgur.com/NeC2E3x.jpg)');
-					i = 3;
-				});
-
-				$('#button4').click(function() {
-					$('body').css('background-image', 'url(https://i.imgur.com/QIjQaoH.jpg)');
-					i = 4;
-				});
+				var countdown = 6000;
 
 				$(function() {
 					function nextBackground() {
@@ -74,6 +55,30 @@
 
 					setTimeout(nextBackground, 1);
 					$('body').css('background-image', 'url(' + backgrounds[0] + ')');
+				});
+
+				$('#button1').click(function() {
+					$('body').css('background-image', 'url(http://i.imgur.com/WDzYe4x.jpg)');
+					i = 1;
+					nextBackground;
+				});
+
+				$('#button2').click(function() {
+					$('body').css('background-image', 'url(http://i.imgur.com/NYi3Ffk.jpg)');
+					i = 2;
+					nextBackground;
+				});
+
+				$('#button3').click(function() {
+					$('body').css('background-image', 'url(https://i.imgur.com/NeC2E3x.jpg)');
+					i = 3;
+					nextBackground;
+				});
+
+				$('#button4').click(function() {
+					$('body').css('background-image', 'url(https://i.imgur.com/QIjQaoH.jpg)');
+					i = 4;
+					nextBackground;
 				});
 
 				// Finding and printing date
@@ -141,7 +146,7 @@
 		</aside>	
 
 		<!-- Creating social media pics and links at bottom of each page -->
-		<footer id="connect">
+		<footer id="footer">
 			<ul class="connectlist" style="list-style-type:none">
 				<li>
 					<a id="connect1" href="https://www.instagram.com/austingosch/" 
@@ -162,22 +167,23 @@
 				<li>
 					<a id="connect3" href="https://www.linkedin.com/in/austin-gosch-39a64a107?trk=nav_responsive_tab_profile_pic" 
 					target="_blank">
-						<img src="https://i.imgur.com/HfPOyAJ.png" 
+						<img src="https://i.imgur.com/wrhSoyH.png" 
 							width=30 height=30
 							alt="Linkedin Link" />
 					</a>
 				</li>	
 				<li>
-					<a id="connect4">
-						<img src="https://i.imgur.com/wrhSoyH.png" 
+					<a id="connect4" href="contact.html">
+						<img src="https://i.imgur.com/HfPOyAJ.png" 
 							width=30 height=30 
-							alt="Email Link" />
+							alt="Contact Link" />
 					</a>
 				</li>	
 			</ul>
-		</footer>
 
-		<div id="date" ></div>
+			<div id="date" ></div>
+
+		</footer>
 
 	</body>
 </html>
