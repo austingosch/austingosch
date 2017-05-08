@@ -176,10 +176,13 @@ a {
 }
 
 /* Placing the connections in bottom left of page */
-#connect {
+#footer {
 	position: fixed;
 	top: 525px;
-	left: -18px;
+	left: -32px;
+	width: 200px;
+	height: 100%;	
+	text-align: center;
 }
 
 /* Making connections horrizonal, inline list rather than vertical */
@@ -194,12 +197,12 @@ a {
 
 /* Styling the date calculated by JQuery */
 #date {
-	position: absolute;
+	position: fixed;
 	top: 574px;
 	left: 30px;
 	font-size: 20px;
 	font-family: Open Sans;
-	color: gray;
+	color: white;
 	opacity: .8;
 }
 
